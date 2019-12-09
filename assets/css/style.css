@@ -30,13 +30,19 @@ b{
 
 /* HOME SCREEN */
 .start-box{
-  display: none;
+  display: block;
   position: fixed;
   top:0;
   left: 0;
+  transform: scale(5);
+  opacity: 0;
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  z-index: -1;
 }
 .start-box.active{
-  display: block
+  transform: scale(1);
+  opacity: 1;
+  z-index: 1;
 }
 .start-box-inner{
   background:rgba(255,255,255,.65);
@@ -252,10 +258,33 @@ b{
 
 /* GAME SCREEN */
 .game-box{
-  display: none;
+  display: block;
+  opacity: 0;
+  background: rgba(255,255,255,.65);
 }
 .game-box.active{
+  opacity: 1;
+  transition: opacity ease-in 1000ms 
+}
+.game-box-inner{
   display: block;
+  position: relative;
+  max-width: 768px;
+  min-height: 800px;
+  margin: 0 auto;
+}
+.game-box .title{
+  color: #1faf17;
+  display: inline-block;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  margin-top: 70px;
+  text-align: left;
+  transform: rotate(-13deg);
+}
+.game-box .gaming-box{
+  
 }
 /* end GAME SCREEN */
 

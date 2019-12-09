@@ -23,7 +23,7 @@
   
   <!-- HOME SCREEN -->
 
-  <section class="container start-box active">
+  <section class="container start-box">
 
     <div class="start-box-inner">
 
@@ -64,8 +64,46 @@
 
   <!-- GAME SCREEN -->
 
-  <section class="container game-box">
-    <p></p>
+  <section class="container game-box active">
+    <div class="game-box-inner">
+      <h1 class="title">PIZZA HACK</h1>  
+      <div class="gaming-box">
+        <div class="gaming-box-clock-score">
+          <div class="clock">120</div>
+          <p class="score"><span id="mistakes">00</span> / <span id="sucess">10</span><p>
+        </div>
+        <div class="gaming-box-inner">
+          <div class="box-img img-chef">
+            <img src="assets/img/icon-chef.svg" alt="chef" title="chef">
+          </div>
+          <div class="gaming-box-pizza">
+            <div class="box-img img-wood">
+              <img src="assets/img/wood.png" alt="chef" title="chef">
+            </div>
+            <canvas id="pizza-canvas" width="100" height="100"></canvas>
+            <div id="ingredients" class="slider-ingredientes swiper-container">
+              <div class="swiper-wraper">
+                
+                <div class="swiper-slide">
+                  <div class="box-ingredient-item">
+                    <img src="" alt="" title="">
+                  </div>
+                  <p class="title">Ingredient A</p>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="box-client"></div>
+            <div id="box-pista" class="box-pista"></div>
+            <div id="client" class="box-img img-client">
+                <img src="assets/img/icon-client.png" alt="chef" title="chef">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- end GAME SCREEN -->
