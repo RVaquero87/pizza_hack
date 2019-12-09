@@ -168,6 +168,10 @@ b{
   -o-transform: translate(-50%,-50%);
   z-index: 0;
 }
+.start-box .btn-start:hover:after{
+  left: 105%;
+  top: -70%;
+}
 .start-box .img-chef{
   bottom: -250px;
   left: 50px;
