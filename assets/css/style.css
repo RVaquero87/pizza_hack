@@ -27,6 +27,26 @@ b{
   font-weight: 700;
   text-transform: uppercase;
 }
+.btn{
+  background: #1faf17;
+  border-radius: 10px;
+  color:#fff;
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 auto;
+  max-width: 220px;
+  padding: 20px 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform:capitalize;
+}
+.btn:hover{
+  background:rgba(31, 175, 23, .85);
+  transition: all ease-in 500ms;
+}
 /* end COMMON */
 
 /* HOME SCREEN */
@@ -260,8 +280,10 @@ b{
 
 /* MESSAGE INSTRUCTIONS */
 .instructions{
-  display: block;
-  opacity: 0;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
   opacity: 0;
   position: fixed;
   transform: scale(5);
@@ -272,13 +294,68 @@ b{
   transform: scale(1);
   transition: transform 1000ms ease-out, opacity 300ms ease-out;
   opacity: 1;
-  z-index: 1;
+  z-index: 5;
 }
-.instructions-box{}
-.instructions .title{}
-.instructions-box > div{}
-.instructions-box > div p{}
-.instructions-box > a{}
+.instructions-box{
+  background: #fff;
+  border-radius: 10px;
+  max-width: 900px;
+  padding: 40px;
+  width: 90%;
+}
+.instructions .title{
+  color: #1faf17;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.instructions .subtitle{
+  display: block;
+  cursor: pointer;
+  margin: 10px 0 15px;
+}
+.instructions .subtitle span{
+  display: inline-block;
+  color: #1faf17;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: left;
+  vertical-align: middle;
+}
+.instructions .subtitle:after{
+  background: url('../img/arrow.svg') no-repeat center;
+  background-size: contain;
+  content:'';
+  transform: rotate(0deg);
+  display: inline-block;
+  height: 20px;
+  margin-left: 10px;
+  vertical-align: middle;
+  width: 16px;
+}
+.instructions .subtitle.active:after{
+  transform: rotate(180deg);
+}
+.instructions-box > div{
+  display: block;
+  height:0;
+  overflow: hidden;
+}
+.instructions-box > div.active{
+  height:initial;
+  transition:all ease-in 500ms;
+}
+.instructions-box > div p{
+  font-family: Arial, sans-serif;
+  color:#000;
+  padding-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: left;
+}
 /* end MESSAGE INSTRUCTIONS */
 
 /* GAME SCREEN */
@@ -480,8 +557,10 @@ b{
 
 /* MESSAGE SUCESS */
 .sucess-message{
-  display: block;
-  opacity: 0;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
   opacity: 0;
   position: fixed;
   transform: scale(5);
@@ -490,19 +569,44 @@ b{
 }
 .sucess-message.active{
   transform: scale(1);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
   opacity: 1;
-  z-index: 1;
+  z-index: 5;
 }
-.sucess-message-inner{}
-.sucess-message .img-sucess{}
-.sucess-message a{}
+.sucess-message-inner{
+  position: relative;
+  max-width: 550px;
+}
+.sucess-message-inner:before{
+  content:'';
+  position: absolute;
+  display: block;
+  background: rgba(255,255,255,.65);
+  width: 80%;
+  height: 100%;
+  left:50%;
+  top:50%;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.sucess-message .img-sucess img{
+  position: relative;
+  left:50px;
+}
+.sucess-message a{
+  position: relative;
+  top: -80px;
+}
 /* end MESSAGE SUCESS */
 
 /* MESSAGE SUCESS END */
 .sucess-end-message{
-  display: block;
-  opacity: 0;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
   opacity: 0;
   position: fixed;
   transform: scale(5);
@@ -511,19 +615,43 @@ b{
 }
 .sucess-end-message.active{
   transform: scale(1);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
   opacity: 1;
-  z-index: 1;
+  z-index: 5;
 }
-.sucess-end-message-inner{}
-.sucess-end-message .img-sucess-end{}
-.sucess-end-message a{}
+.sucess-end-message-inner{
+  position: relative;
+  max-width: 550px;
+}
+.sucess-end-message-inner:before{
+  content:'';
+  position: absolute;
+  display: block;
+  background: rgba(255,255,255,.65);
+  width: 80%;
+  height: 100%;
+  left:50%;
+  top:50%;
+  border-radius: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.sucess-end-message .img-sucess-end img{
+  position: relative;
+  left:50px;
+}
+.sucess-end-message a{
+ position: relative;
+}
 /* end MESSAGE SUCESS END */
 
 /* MESSAGE GAME OVER */
 .game-over-message{
-  display: block;
-  opacity: 0;
+  align-items: center;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  justify-content: center;
   opacity: 0;
   position: fixed;
   transform: scale(5);
@@ -532,13 +660,35 @@ b{
 }
 .game-over-message.active{
   transform: scale(1);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
   opacity: 1;
-  z-index: 1;
+  z-index: 5;
 }
-.game-over-message-inner{}
-.game-over-message .img-game-over{}
-.game-over-message .reset{}
+.game-over-message-inner{
+  position: relative;
+  max-width: 550px;
+}
+.game-over-message-inner:before{
+  content: '';
+  position: absolute;
+  display: block;
+  background: rgba(255,255,255,.65);
+  width: 100%;
+  height: 93%;
+  left: 50%;
+  top: 50%;
+  border-radius: 70px;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+.game-over-message .img-game-over img{
+  position: relative;
+}
+.game-over-message a{
+ position: relative;
+ top: -55px;
+}
 /* end MESSAGE GAME OVER */
 
 
@@ -562,6 +712,7 @@ b{
   max-width: 450px;
   padding: 40px;
   text-align: center;
+  width: 90%;
 }
 /* end MESSAGE MOBILE */
 
@@ -624,7 +775,11 @@ b{
 
   /* MESSAGE MOBILE */
   .container.start-box.active, 
-  .container.game-box.active{
+  .container.game-box.active,
+  .container.instructions.active,
+  .container.sucess-message.active,
+  .container.sucess-end-message.active,
+  .container.game-over-message.active{
     display: none;
   }
   .mobile-message{
@@ -639,7 +794,11 @@ b{
 
   /* MESSAGE MOBILE */
   .container.start-box.active, 
-  .container.game-box.active{
+  .container.game-box.active,
+  .container.instructions.active,
+  .container.sucess-message.active,
+  .container.sucess-end-message.active,
+  .container.game-over-message.active{
     display: none;
   }
   .mobile-message{
