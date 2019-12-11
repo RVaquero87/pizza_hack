@@ -65,21 +65,48 @@
 
   <!-- end HOME SCREEN -->
 
+
+  <!-- MESSAGE INSTRUCTIONS -->
+
+  <section class="instructions">
+    <div class="instructions-box">
+      <h2 class="title">INSTRUCIONES</h2>
+      <h3 id="objetive" class="subtitle">Objetivo</h3>
+      <div data-box="objetive">
+        <p>Hay que conseguir satisfacer el gusto de los siguientes clientes creando las Pizzas que ellos quieren antes de que se acabe el tiempo.</p>
+      </div>
+      <h3 id="how" class="subtitle">¿Cómo se juega?</h3>
+      <div data-box="how">
+        <p>Tienes que ir creando las Pizzas clickando en los ingredientes para que se incluyan o se eliminen de la pizza</p>
+        <p>Los ingredientes seleccionados estarán tendrán opacidad para que puedas diferenciarles de los que no estén seleccionados.</p>
+        <p>El cliente te irá diciendo pistas o pequeñas ayudas de lo que quiere.</p>
+        <p>Cada 10 segundos se hará una comprobación y se señalara en el marcador los aciertos que tengas.</p>
+      </div>
+      <h3 id="win" class="subtitle">¿Cuando gano?</h3>
+      <div data-box="win">
+        <p>Cuando el marcador tenga los mismos aciertos que ingredientes tiene la pizza y con ello el cliente quedará satisfecho.</p>
+      </div>
+    </div>
+    <a id="start-game" href="javascript:void(0)" title="Comenzar el juego">COMENZAR EL JUEGO</a>
+  </section>
+  
+    <!-- end MESSAGE INSTRUCTIONS -->
+
   <!-- GAME SCREEN -->
 
   <section class="container game-box active">
     <div class="game-box-inner">
       <h1 class="title">PIZZA HACK</h1>  
+      <div class="box-clock-score">
+        <div class="clock">120</div>
+        <p class="score"><span id="mistakes">00</span> / <span id="sucess">10</span></p>
+      </div>
       <div class="gaming-box">
-        <div class="gaming-box-clock-score">
-          <div class="clock">120</div>
-          <p class="score"><span id="mistakes">00</span> / <span id="sucess">10</span></p>
-        </div>
         <div class="gaming-box-inner">
-          <div class="box-img img-chef">
-            <img src="assets/img/icon-chef.svg" alt="chef" title="chef">
-          </div>
           <div class="gaming-box-pizza">
+            <div class="box-img img-chef">
+              <img src="assets/img/icon-chef.svg" alt="chef" title="chef">
+            </div>
             <div class="box-img img-wood">
               <img src="assets/img/wood.png" alt="chef" title="chef">
             </div>
@@ -87,69 +114,256 @@
             <div id="ingredients" class="slider-ingredientes swiper-container">
               <div class="swiper-wrapper">
                 
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient A</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-1">
+                  <a id="aceite" href="javascript:void(0)" title="Aceite de Oliva">
+                    <div class="box-img">
+                      <img src="assets/img/slider/aceite.jpg" alt="Aceite de Oliva" title="Aceite de Oliva">
+                    </div>
+                    <p class="title-box">Aceite de Oliva</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient B</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-2">
+                  <a id="aceitunas-negras" href="javascript:void(0)" title="Aceitunas Negras">
+                    <div class="box-img">
+                      <img src="assets/img/slider/aceitunas-negras.jpg" alt="Aceitunas Negras" title="Aceitunas Negras">
+                    </div>
+                    <p class="title-box">Aceitunas Negras</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient C</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-3">
+                  <a id="aceitunas-verdes" href="javascript:void(0)" title="Aceitunas Verdes">
+                    <div class="box-img">
+                      <img src="assets/img/slider/aceitunas-verdes.jpg" alt="Aceitunas Verdes" title="Aceitunas Verdes">
+                    </div>
+                    <p class="title-box">Aceitunas Verdes</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient D</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-4">
+                  <a id="ajo" href="javascript:void(0)" title="Ajo">
+                    <div class="box-img">
+                      <img src="assets/img/slider/ajo.jpg" alt="Ajo" title="Ajo">
+                    </div>
+                    <p class="title-box">Ajo</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient E</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-5">
+                  <a id="albahaca" href="javascript:void(0)" title="Albahaca">
+                    <div class="box-img">
+                      <img src="assets/img/slider/albahaca.jpg" alt="Albahaca" title="Albahaca">
+                    </div>
+                    <p class="title-box">Albahaca</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient F</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-6">
+                  <a id="alcachofas" href="javascript:void(0)" title="Alcachofas">
+                    <div class="box-img">
+                      <img src="assets/img/slider/alcachofas.jpg" alt="Alcachofas" title="Alcachofas">
+                    </div>
+                    <p class="title-box">Alcachofas</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient G</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-7">
+                  <a id="bacon" href="javascript:void(0)" title="Bacon">
+                    <div class="box-img">
+                      <img src="assets/img/slider/bacon.jpg" alt="Bacon" title="Bacon">
+                    </div>
+                    <p class="title-box">Bacon</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient H</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-8">
+                  <a id="berenjena" href="javascript:void(0)" title="Berenjena">
+                    <div class="box-img">
+                      <img src="assets/img/slider/berenjena.jpg" alt="Berenjena" title="Berenjena">
+                    </div>
+                    <p class="title-box">Berenjena</p>
+                  </a>
                 </div>
-                <div class="swiper-slide box-ingredient-item">
-                  <div class="box-img">
-                    <img src="" alt="" title="">
-                  </div>
-                  <p class="title-box">Ingredient I</p>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-9">
+                  <a id="carne-picada" href="javascript:void(0)" title="Carne Picada">
+                    <div class="box-img">
+                      <img src="assets/img/slider/carne-picada.jpg" alt="Carne Picada" title="Carne Picada">
+                    </div>
+                    <p class="title-box">Carne Picada</p>
+                  </a>
                 </div>
-
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-10">
+                  <a id="cebolla" href="javascript:void(0)" title="Cebolla">
+                    <div class="box-img">
+                      <img src="assets/img/slider/cebolla.jpg" alt="Cebolla" title="Cebolla">
+                    </div>
+                    <p class="title-box">Cebolla</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-11">
+                  <a id="espinacas" href="javascript:void(0)" title="Espinacas">
+                    <div class="box-img">
+                      <img src="assets/img/slider/espinacas.jpg" alt="Espinacas" title="Espinacas">
+                    </div>
+                    <p class="title-box">Espinacas</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-12">
+                  <a id="fresas" href="javascript:void(0)" title="fresas">
+                    <div class="box-img">
+                      <img src="assets/img/slider/fresa.jpg" alt="fresas" title="fresas">
+                    </div>
+                    <p class="title-box">fresas</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-13">
+                  <a id="huevo-duro" href="javascript:void(0)" title="Huevo Duro">
+                    <div class="box-img">
+                      <img src="assets/img/slider/huevo-duro.jpg" alt="Huevo Duro" title="Huevo Duro">
+                    </div>
+                    <p class="title-box">Huevo Duro</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-14">
+                  <a id="jamon" href="javascript:void(0)" title="Jamón York">
+                    <div class="box-img">
+                      <img src="assets/img/slider/jamon.jpg" alt="Jamón York" title="Jamón York">
+                    </div>
+                    <p class="title-box">Jamón York</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-15">
+                  <a id="maiz" href="javascript:void(0)" title="Maiz">
+                    <div class="box-img">
+                      <img src="assets/img/slider/maiz.jpg" alt="Maiz" title="Maiz">
+                    </div>
+                    <p class="title-box">Maiz</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-16">
+                  <a id="mozarella" href="javascript:void(0)" title="Mozarella">
+                    <div class="box-img">
+                      <img src="assets/img/slider/mozarella.jpg" alt="Mozarella" title="Mozarella">
+                    </div>
+                    <p class="title-box">Mozarella</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-17">
+                  <a id="nata" href="javascript:void(0)" title="Nata para cocinar">
+                    <div class="box-img">
+                      <img src="assets/img/slider/nata.jpg" alt="Nata para cocinar" title="Nata para cocinar">
+                    </div>
+                    <p class="title-box">Nata para cocinar</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-18">
+                  <a id="oregano" href="javascript:void(0)" title="Oregano">
+                    <div class="box-img">
+                      <img src="assets/img/slider/oregano.jpg" alt="Oregano" title="Oregano">
+                    </div>
+                    <p class="title-box">Oregano</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-19">
+                  <a id="pimienta-negra" href="javascript:void(0)" title="Pimienta Negra">
+                    <div class="box-img">
+                      <img src="assets/img/slider/pimienta-negra.jpg" alt="Pimienta Negra" title="Pimienta Negra">
+                    </div>
+                    <p class="title-box">Pimienta Negra</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-20">
+                  <a id="pimiento" href="javascript:void(0)" title="Pimiento">
+                    <div class="box-img">
+                      <img src="assets/img/slider/pimiento.jpg" alt="Pimiento" title="Pimiento">
+                    </div>
+                    <p class="title-box">Pimiento</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-21">
+                  <a id="pina" href="javascript:void(0)" title="Piña">
+                    <div class="box-img">
+                      <img src="assets/img/slider/pina.jpg" alt="Piña" title="Piña">
+                    </div>
+                    <p class="title-box">Piña</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-22">
+                  <a id="pollo" href="javascript:void(0)" title="Pollo">
+                    <div class="box-img">
+                      <img src="assets/img/slider/pollo.jpg" alt="Pollo" title="Pollo">
+                    </div>
+                    <p class="title-box">Pollo</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-23">
+                  <a id="queso-rallado" href="javascript:void(0)" title="Queso Rallado">
+                    <div class="box-img">
+                      <img src="assets/img/slider/queso-rallado.jpg" alt="Queso Rallado" title="Queso Rallado">
+                    </div>
+                    <p class="title-box">Queso Rallado</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-24">
+                  <a id="queso" href="javascript:void(0)" title="Queso">
+                    <div class="box-img">
+                      <img src="assets/img/slider/queso.jpg" alt="Queso" title="Queso">
+                    </div>
+                    <p class="title-box">Queso</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-25">
+                  <a id="sal" href="javascript:void(0)" title="Sal">
+                    <div class="box-img">
+                      <img src="assets/img/slider/sal.jpg" alt="Sal" title="Sal">
+                    </div>
+                    <p class="title-box">Sal</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-26">
+                  <a id="salami" href="javascript:void(0)" title="Salami">
+                    <div class="box-img">
+                      <img src="assets/img/slider/salami.jpg" alt="Salami" title="Salami">
+                    </div>
+                    <p class="title-box">Salami Picante</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-27">
+                  <a id="sardinas" href="javascript:void(0)" title="Sardinas">
+                    <div class="box-img">
+                      <img src="assets/img/slider/sardinas.jpg" alt="Sardinas" title="Sardinas">
+                    </div>
+                    <p class="title-box">Sardinas</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-28">
+                  <a id="setas" href="javascript:void(0)" title="Setas">
+                    <div class="box-img">
+                      <img src="assets/img/slider/setas.jpg" alt="Setas" title="Setas">
+                    </div>
+                    <p class="title-box">Setas</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-29">
+                  <a id="tomate-frito" href="javascript:void(0)" title="Tomate frito">
+                    <div class="box-img">
+                      <img src="assets/img/slider/tomate-frito.jpg" alt="Tomate frito" title="Tomate frito">
+                    </div>
+                    <p class="title-box">Tomate frito</p>
+                  </a>
+                </div>
+                <div class="swiper-slide box-ingredient-item  box-ingredient-item-30">
+                  <a id="tomate" href="javascript:void(0)" title="Tomate">
+                    <div class="box-img">
+                      <img src="assets/img/slider/tomate.jpg" alt="Tomate" title="Tomate">
+                    </div>
+                    <p class="title-box">Tomate natural</p>
+                  </a>
+                </div>
+                
               </div>
-              <div class="slider-ingredientes-pagination swiper-pagination"></div>
+              <div class="slider-ingredientes-next swiper-button-next"></div>
+              <div class="slider-ingredientes-prev swiper-button-prev"></div>
             </div>
           </div>
           <div class="box-client">
             <div id="box-pista" class="box-pista"><p>Lorem ipsum dolor sit amet consectetur</p></div>
             <div id="client" class="box-img img-client">
-                <img src="assets/img/hilton.png" alt="chef" title="chef">
+                <img src="assets/img/cliente/cliente-vivaldi.png" alt="chef" title="chef">
             </div>
           </div>
         </div>
@@ -158,6 +372,41 @@
   </section>
 
   <!-- end GAME SCREEN -->
+
+  <!-- MESSAGE SUCESS -->
+  <section class="sucess-message">
+      <div class="sucess-message-inner">
+          <div class="box-img img-sucess">
+              <img src="assets/img/continue.png" alt="Continuar" title="Continuar">
+          </div>
+          <a id="continue-game" href="javascript:void(0)" title="Continuar el juego">Continuar EL JUEGO</a>
+      </div>
+  </section>
+  <!-- end MESSAGE SUCESS -->
+
+  <!-- MESSAGE SUCESS -->
+  <section class="sucess-end-message">
+      <div class="sucess-end-message-inner">
+          <div class="box-img img-sucess-end">
+              <img src="assets/img/finish.png" alt="Continuar" title="Continuar">
+          </div>
+          <a class="reset" href="javascript:void(0)" title="Volver a jugar">Volver a jugar</a>
+      </div>
+  </section>
+  <!-- end MESSAGE SUCESS -->
+
+  <!-- MESSAGE GAME OVER -->
+
+  <section class="game-over-message">
+      <div class="game-over-message-inner">
+          <div class="box-img img-game-over">
+              <img src="assets/img/game over.png" alt="GAME OVER" title="GAME OVER">
+          </div>
+          <a class="reset" href="javascript:void(0)" title="Volver a jugar">Volver a jugar</a>
+      </div>
+  </section>
+
+  <!-- end MESSAGE GAME OVER -->
 
   <!-- MESSAGE MOBILE -->
 

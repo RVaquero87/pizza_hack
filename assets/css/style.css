@@ -256,6 +256,29 @@ b{
 }
 /* end HOME SCREEN */
 
+/* MESSAGE INSTRUCTIONS */
+.instructions{
+  display: block;
+  opacity: 0;
+  opacity: 0;
+  position: fixed;
+  transform: scale(5);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  z-index: -1;
+}
+.instructions.active{
+  transform: scale(1);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+.instructions-box{}
+.instructions .title{}
+.instructions-box > div{}
+.instructions-box > div p{}
+.instructions-box > a{}
+/* end MESSAGE INSTRUCTIONS */
+
 /* GAME SCREEN */
 .game-box{
   display: block;
@@ -267,11 +290,14 @@ b{
   transition: opacity ease-in 1000ms 
 }
 .game-box-inner{
-  display: block;
-  position: relative;
-  max-width: 768px;
-  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
   margin: 0 auto;
+  max-width: 900px;
+  min-height: 800px;
+  position: relative;
 }
 .game-box .title{
   color: #1faf17;
@@ -279,57 +305,152 @@ b{
   font-family: 'Lobster Two', cursive, Arial, sans-serif;
   font-size: 56px;
   font-weight: 400;
-  margin-top: 70px;
   text-align: left;
   transform: rotate(-13deg);
 }
-.game-box .gaming-box{}
-.game-box .gaming-box-clock-score{}
-.game-box .gaming-box-clock-score .clock{}
-.game-box .gaming-box-clock-score .score{}
-.game-box .gaming-box-clock-score .score span{}
+.game-box .gaming-box{
+  margin-bottom: 30px;
+}
+.game-box .box-clock-score{
+    align-items: flex-start;
+    display: flex;
+    height: 140px;
+    justify-content: flex-end;
+    position: relative;
+}
+.game-box .box-clock-score .clock{
+  align-items: center;
+  background: #e6242c;
+  border-radius: 50%;
+  border: 10px solid #1faf17;
+  color: #fcfcfc;
+  display: flex;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 50px;
+  height: 125px;
+  justify-content: center;
+  left:54%;
+  position: absolute;
+  text-align: center;
+  top: -25px;
+  width: 125px;
+  -webkit-transform: translate(-50%,0%);
+  -moz-transform: translate(-50%,0%);
+  -ms-transform: translate(-50%,0%);
+  -o-transform: translate(-50%,0%);
+}
+.game-box .box-clock-score .score{
+  color:#1faf17;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+}
+.game-box .box-clock-score .score span{
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1;
+}
+.game-box .box-clock-score .score span#mistakes{
+  position: relative;
+  left: 10px;
+}
+.game-box .box-clock-score .score span#sucess{
+  left: -10px;
+  position: relative;
+}
 .game-box .gaming-box-inner{
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
 }
-.gaming-box-inner .img-chef{}
 .gaming-box-inner .gaming-box-pizza{
   position: relative;
-  width: 300px;
+  max-width: 70%;
+  width: 100%;
 }
-.gaming-box-inner .gaming-box-pizza .img-wood{}
+.gaming-box-inner .gaming-box-pizza .img-chef{
+  left: 10px;
+  max-width: 140px;
+  position: absolute;
+  top: 210px;
+}
+.gaming-box-inner .gaming-box-pizza .img-wood{
+  max-width: 360px;
+  margin: 0 auto 50px;
+}
 .gaming-box-inner .gaming-box-pizza canvas{
   background: #c1ca53;
   border-radius: 100%;
-  height: 250px;
-  left: 42px;
+  height: 300px;
+  left: 53.4%;
   position: absolute;
-  top: 9px;
-  width: 250px;
+  top: 10px;
+  width: 300px;
+  -webkit-transform: translate(-50%,0%);
+  -moz-transform: translate(-50%,0%);
+  -ms-transform: translate(-50%,0%);
+  -o-transform: translate(-50%,0%);
   z-index: 2;
 }
-.gaming-box-inner .gaming-box-pizza .slider-ingredients{
+.gaming-box-inner .gaming-box-pizza .slider-ingredientes{
+  border-radius: 5px;
   width: 100%;
 }
-.slider-ingredients .box-ingredient-item{}
-.slider-ingredients .box-ingredient-item .box-img{}
-.slider-ingredients .box-ingredient-item .title-box{}
-.slider-ingredients .box-ingredient-item .title-box{}
+.slider-ingredientes{
+  background: #fff;
+}
+.slider-ingredientes .box-ingredient-item > a{
+  text-decoration: none;
+}
+.slider-ingredientes .box-ingredient-item .title-box{
+  align-items: center;
+  color:rgba(0, 0, 0, 1);
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  min-height: 50px;
+  padding: 0 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slider-ingredientes .box-ingredient-item > a .box-img{
+  opacity: 1;
+}
+.slider-ingredientes .box-ingredient-item > a.active .box-img{
+  opacity: .5;
+  transition: all 1000ms ease;
+}
+.slider-ingredientes .box-ingredient-item > a:hover .title-box{
+  text-decoration: underline;
+}
+.slider-ingredientes .box-ingredient-item > a.active .title-box{
+  color:rgba(0, 0, 0, .35);
+  transition: all 1000ms ease;
+}
+.slider-ingredientes .swiper-button-next, 
+.slider-ingredientes .swiper-button-prev{
+  color:#1faf17;
+  text-decoration: none;
+}
 .gaming-box-inner .box-client{
   position: relative;
 }
 .gaming-box-inner .box-client .box-pista{
-  background: #fff;
+  background: #fcfcfc;
   border-radius: 50%;
   display: block;
-  left: -140px;
+  left: -130px;
   position: absolute;
-  top: -150px;
+  top: -125px;
   z-index:1;
 }
 .gaming-box-inner .box-client .box-pista:before{
   content:'';
-  border-color: #fff transparent transparent transparent;
+  border-color: #fcfcfc transparent transparent transparent;
   border-style: solid;
   border-width: 90px 20px 0 20px;
   bottom: -45px;
@@ -352,8 +473,71 @@ b{
   text-align: center;
   z-index: 1;
 }
-.gaming-box-inner .box-client .img-client{}
 /* end GAME SCREEN */
+
+/* MESSAGE SUCESS */
+.sucess-message{
+  display: block;
+  opacity: 0;
+  opacity: 0;
+  position: fixed;
+  transform: scale(5);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  z-index: -1;
+}
+.sucess-message.active{
+  transform: scale(1);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+.sucess-message-inner{}
+.sucess-message .img-sucess{}
+.sucess-message a{}
+/* end MESSAGE SUCESS */
+
+/* MESSAGE SUCESS END */
+.sucess-end-message{
+  display: block;
+  opacity: 0;
+  opacity: 0;
+  position: fixed;
+  transform: scale(5);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  z-index: -1;
+}
+.sucess-end-message.active{
+  transform: scale(1);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+.sucess-end-message-inner{}
+.sucess-end-message .img-sucess-end{}
+.sucess-end-message a{}
+/* end MESSAGE SUCESS END */
+
+/* MESSAGE GAME OVER */
+.game-over-message{
+  display: block;
+  opacity: 0;
+  opacity: 0;
+  position: fixed;
+  transform: scale(5);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  z-index: -1;
+}
+.game-over-message.active{
+  transform: scale(1);
+  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  opacity: 1;
+  z-index: 1;
+}
+.game-over-message-inner{}
+.game-over-message .img-game-over{}
+.game-over-message .reset{}
+/* end MESSAGE GAME OVER */
+
 
 /* MESSAGE MOBILE */
 .mobile-message{
@@ -403,9 +587,37 @@ b{
 
 }
 
+@media only screen and (max-width: 960px) {
 
+  /* GAME SCREEN */
+  .gaming-box-inner .gaming-box-pizza .img-chef {
+    display: none;
+  }
+  .gaming-box-inner .gaming-box-pizza .img-wood {
+    max-width: 360px;
+    margin: 0 0 20px 15px;
+  }
+  .gaming-box-inner .gaming-box-pizza canvas {
+    left: 66px;
+    -webkit-transform: translate(0%,0%);
+    -moz-transform: translate(0%,0%);
+    -ms-transform: translate(0%,0%);
+    -o-transform: translate(0%,0%);
+  }
+  .gaming-box-inner .gaming-box-pizza {
+    max-width: 60%;
+  }
+  .game-box .box-clock-score .clock {
+    left: 50%;
+  }
+  .game-box .box-clock-score {
+    height: 160px;
+  }
+  /* end GAME SCREEN */
 
-@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 799px) {
 
   /* MESSAGE MOBILE */
   .container.start-box.active, 
@@ -421,60 +633,6 @@ b{
 }
 
 @media only screen and (max-height: 799px) {
-
-  /* COMMON */
-  .container{
-    min-height: 600px;
-  }
-  /* end COMMON */
-
-  /* HOME SCREEN */
-  .start-box-inner{
-    min-height: 600px;
-  }
-  .start-box .title {
-    font-size: 60px;
-    left: 110px;
-    top: 8vh;
-  }
-  .start-box .description {
-    font-size: 20px;
-    line-height: 24px;
-    max-width: 330px;
-    right: 74px;
-    top: 18vh;
-  }
-  .start-box .btn-start {
-    top: 43%;
-  }
-  .start-box .img-chef {
-    display: none;
-  }
-  .start-box .img-pizza {
-    bottom: -30px;
-    max-width: 380px;
-    left: 50%;
-    -webkit-transform: translate(-50%,0%);
-    -moz-transform: translate(-50%,0%);
-    -ms-transform: translate(-50%,0%);
-    -o-transform: translate(-50%,0%);
-  }
-  .start-box .img-decoration-1 {
-    left: 115%;
-  }
-  .start-box .img-decoration-2 {
-    max-width: 44%;
-    left: -11%;
-    top: 24%;
-  }
-  .start-box .img-decoration-3,
-  .start-box .img-decoration-4 {
-    display: none;
-  }
-
-}
-
-@media only screen and (max-height: 599px) {
 
   /* MESSAGE MOBILE */
   .container.start-box.active, 
