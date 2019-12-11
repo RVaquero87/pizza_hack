@@ -7,6 +7,7 @@ body{
   height: 100vh;
   left: 0;
   min-height: 800px;
+  max-height: 1080px;
   overflow: hidden;
   position: relative;
   top:0;
@@ -51,6 +52,7 @@ b{
   margin: 0 auto;
   max-width: 768px;
   min-height: 800px;
+  max-height: 1080px;
   position: relative;
   width: 100%;
 }
@@ -297,6 +299,7 @@ b{
   margin: 0 auto;
   max-width: 900px;
   min-height: 800px;
+  max-height: 1080px;
   position: relative;
 }
 .game-box .title{
