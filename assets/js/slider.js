@@ -1,4 +1,4 @@
-window.onload = function() {
+function sliderLoad() {
   let swiper = new Swiper('.slider-ingredientes', {
     slidesPerView: 3,
     spaceBetween: 20,
