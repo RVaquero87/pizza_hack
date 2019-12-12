@@ -3,6 +3,7 @@ let clients = [
     nameClient: 'Vivaldi',
     srcClient: 'assets/img/cliente/cliente-vivaldi.png',
     namePizza: 'Cuatro Estaciones',
+    time: 120,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'mozarella', 'alcachofas', 'aceitunas-negras', 'jamon', 'setas', 'pimienta-negra'],
     clues: [
       {
@@ -15,6 +16,7 @@ let clients = [
     nameClient: 'Moana',
     srcClient: 'assets/img/cliente/cliente-moana.png',
     namePizza: 'Hawaiana',
+    time: 150,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pina', 'queso-rallado', 'jamon', 'oregano'],
     clues: [
       {
@@ -27,6 +29,7 @@ let clients = [
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Margherita',
+    time: 60,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'ajo', 'mozarella', 'albahaca', 'pimienta-negra', 'oregano'],
     clues: [
       {
@@ -38,6 +41,7 @@ let clients = [
   {
     nameClient: 'Heidi',
     namePizza: 'Primavera',
+    time: 90,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pimiento', 'maiz', 'queso', 'tomate', 'oregano', 'huevo-duro'],
     clues: [
       {
@@ -49,6 +53,7 @@ let clients = [
   {
     nameClient: 'Mario Bros',
     namePizza: 'Funghi',
+    time: 50,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'queso', 'setas', 'jamon', 'mozarella', 'oregano'],
     clues: [
       {
@@ -60,6 +65,7 @@ let clients = [
   {
     nameClient: 'Speedy Gonzales',
     namePizza: 'Diavola',
+    time: 90,
     ingredients: ['sal', 'aceite', 'mozarella', 'salami', 'tomate-frito', 'tomate', 'albahaca', 'oregano'],
     clues: [
       {
@@ -71,6 +77,7 @@ let clients = [
   {
     nameClient: 'Paris Hilton',
     namePizza: 'Caprichosa',
+    time: 80,
     ingredients: ['sal', 'aceite', 'mozarella', 'huevo-duro', 'anchoas','aceitunas-negras', 'albahaca', 'setas', 'alcachofas'],
     clues: [
       {
