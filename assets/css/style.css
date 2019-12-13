@@ -356,6 +356,9 @@ b{
   line-height: 1.4;
   text-align: left;
 }
+.instructions-box > div p b{
+  text-transform: initial;
+}
 /* end MESSAGE INSTRUCTIONS */
 
 /* GAME SCREEN */
@@ -412,38 +415,53 @@ b{
   left:54%;
   position: absolute;
   text-align: center;
-  top: -25px;
+  top: -3px;
   width: 125px;
   -webkit-transform: translate(-50%,0%);
   -moz-transform: translate(-50%,0%);
   -ms-transform: translate(-50%,0%);
   -o-transform: translate(-50%,0%);
 }
-.game-box .box-clock-score .score{
-  color:#1faf17;
+.game-box .box-clock-score .score {
   font-family: 'Lobster Two', cursive, Arial, sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1;
-}
-.game-box .box-clock-score .score span{
-  font-size: 46px;
   font-weight: 400;
   line-height: 1;
+  text-align: right;
 }
-.game-box .box-clock-score .score span#mistakes{
-  color:#e6242c;
-  font-size: 28px;
-  left: 0px;
+.game-box .box-clock-score .score .sucess-box {
+  color: #1faf17;
+  font-size: 44px;
+  left: 12px;
   position: relative;
 }
-.game-box .box-clock-score .score span#sucess{
+.game-box .box-clock-score .score span {
+  top: 6px;
+}
+.game-box .box-clock-score .score span#sucess {
   left: 10px;
   position: relative;
 }
-.game-box .box-clock-score .score span#marker{
+.game-box .box-clock-score .score span#marker {
   position: relative;
   left: -10px;
+}
+.game-box .box-clock-score .score .sucess-box span:last-child {
+  display: block;
+  font-size: 20px;
+  left: -11px;
+  margin: 2px 0 9px;
+  position: relative;
+}
+.game-box .box-clock-score .mistakes-box {
+  color: #e6242c;
+  font-size: 20px;
+}
+.game-box .box-clock-score .score span#mistakes {
+  color: #e6242c;
+  font-size: 28px;
+  left: 0px;
+  position: relative;
+  top: 1px;
 }
 .game-box .gaming-box-inner{
   display: flex;
@@ -552,11 +570,11 @@ b{
   display: block;
   font-family: arial, sans-serif;
   font-size: 18px;
-  line-height: 1.1;
-  max-width: 300px;
+  line-height: 1.3;
   padding: 40px 20px;
   position: relative;
   text-align: center;
+  width: 300px;
   z-index: 1;
 }
 /* end GAME SCREEN */
@@ -570,7 +588,7 @@ b{
   opacity: 0;
   position: fixed;
   transform: scale(5);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  transition: transform 600ms ease-out, opacity 300ms ease-out;
   z-index: -1;
 }
 .sucess-message.active{
@@ -616,7 +634,7 @@ b{
   opacity: 0;
   position: fixed;
   transform: scale(5);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  transition: transform 600ms ease-out, opacity 300ms ease-out;
   z-index: -1;
 }
 .sucess-end-message.active{
@@ -661,7 +679,7 @@ b{
   opacity: 0;
   position: fixed;
   transform: scale(5);
-  transition: transform 1000ms ease-out, opacity 300ms ease-out;
+  transition: transform 600ms ease-out, opacity 300ms ease-out;
   z-index: -1;
 }
 .game-over-message.active{
@@ -674,15 +692,15 @@ b{
   max-width: 550px;
 }
 .game-over-message-inner:before{
-  content: '';
-  position: absolute;
-  display: block;
   background: rgba(255,255,255,.65);
-  width: 100%;
-  height: 93%;
-  left: 50%;
-  top: 50%;
   border-radius: 70px;
+  content: '';
+  display: block;
+  height: 110%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 110%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -693,7 +711,7 @@ b{
 }
 .game-over-message a{
  position: relative;
- top: -55px;
+ top: 10px;
 }
 /* end MESSAGE GAME OVER */
 
@@ -772,6 +790,9 @@ b{
   }
   .game-box .box-clock-score {
     height: 160px;
+  }
+  .game-box .box-clock-score .score {
+    margin-right: 12px;
   }
   /* end GAME SCREEN */
 

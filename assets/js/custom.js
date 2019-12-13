@@ -11,7 +11,7 @@ window.onload = function() {
   
   //Screen game
   let gameScreen = document.getElementById('game-box');
-  let ingredientsSlider = document.querySelectorAll('#ingredients .box-ingredient-item a');
+  let ingredientsSlider = document.querySelectorAll('#ingredients .box-ingredient-item > a');
   let imgClient = document.querySelectorAll('#client img');
   
   //btn
@@ -44,11 +44,9 @@ window.onload = function() {
       let instructionsTabsDiv = document.getElementById(instructionsTabsId)
 
       if(!instructionsTabs[i].classList.contains('active')){
-
         for(let j = 0; j < instructionsTabs.length; j++){
           instructionsTabs[j].classList.remove('active');
         }
-
         for(let j = 0; j < instructionsBoxTabs.length; j++){
           instructionsBoxTabs[j].classList.remove('active');
         }
@@ -62,8 +60,10 @@ window.onload = function() {
     }
   }
 
+  let level = 0;
+
   //Start Game
-  startGameBtn.onclick = function(e){
+  startGameBtn.onclick = function startGame(){
     instructionsLightBox.classList.remove('active');
 
     //Canvas Slider Array
@@ -71,7 +71,7 @@ window.onload = function() {
 
     //Click Slider Ingredients
     for(let i = 0; i < instructionsTabs.length; i++){
-      ingredientsSlider[i].onclick = function(e){
+      ingredientsSlider[i].onclick = function(){
         ingredientsSlider[i].classList.toggle('active');
         if(canvasSliderArray.includes(this.id)){
           let selectIngredientId = canvasSliderArray.indexOf(this.id);
@@ -82,13 +82,14 @@ window.onload = function() {
         console.log('canvasSliderArray',canvasSliderArray)
       }
     }
-
+    console.log(ingredientsSlider)
+    
     //Get Information Pizza
-    let nameClient = clients[0].nameClient;
-    let imgSrcClient = clients[0].srcClient;
-    let ingredientsPizza = clients[0].ingredients;
-    let time = clients[0].time;
-    let clues = clients[0].clues;
+    let nameClient = clients[level].nameClient;
+    let imgSrcClient = clients[level].srcClient;
+    let ingredientsPizza = clients[level].ingredients;
+    let time = clients[level].time;
+    let clues = clients[level].clues;    
     
     // Chanfe img Client
     for(let i = 0; i < imgClient.length; i++){
@@ -98,28 +99,47 @@ window.onload = function() {
     }
 
     //Build Game
-    game = new game(ingredientsPizza, time, clues);
-    game.startClick();
+    let gamelevel = new game(ingredientsPizza, time, clues);
+    gamelevel.startClick();
 
-    game.intervalId = setInterval(function(){
+    gamelevel.intervalId = setInterval(function(){
       
       //PlayingGame
-      game.playingGame(canvasSliderArray);
+      gamelevel.playingGame(canvasSliderArray);
 
       //Sucees or Sucees end
-      if(game.checkWinner() === true){
-        clearInterval(game.intervalId);
+      if(gamelevel.checkWinner() === true){
+        clearInterval(gamelevel.intervalId);
         succesLightBox.classList.add('active')
+
+        console.log(continueBtn)
+        continueBtn.onclick = function(){
+          level++;
+          succesLightBox.classList.remove('active');
+          for(let i = 0; i < instructionsTabs.length; i++){
+            if(ingredientsSlider[i].classList.contains('active')){
+              ingredientsSlider[i].classList.remove('active');
+            }
+          }
+          startGame();
+        }
+
+        if(level == clients.length-1){
+          sucessEndLightBox.classList.add('active')
+        }
+
       }
       
       //Game Over
-      if(game.checkGameOver() === true){
-        clearInterval(game.intervalId);
+      if(gamelevel.checkGameOver() === true){
+        clearInterval(gamelevel.intervalId);
         gameOverLightBox.classList.add('active')
       }
     },1000)
 
-  }
+  }.bind(level, continueBtn)
+  
+  //continueBtn
   
   //resetBtn
   for(let i = 0; i < resetBtn.length; i++){

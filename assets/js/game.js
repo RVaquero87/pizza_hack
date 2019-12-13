@@ -18,10 +18,10 @@ class game {
     this.printTime();
     this.buildIngredientsWrong(arrayCanvas);
     this.buildIngredientsOk(arrayCanvas);
-    if(this.currentTime%20 == 0){
+    if(this.currentTime%10 == 0){
       this.printClues()
     }
-    if(this.currentTime%10 == 0){
+    if(this.currentTime%5 == 0){
       this.printScore(arrayCanvas);
     }
     this.checkGameOver();
@@ -65,7 +65,8 @@ class game {
     return false;
   }
   checkWinner(){
-    if(this.ingredientsPizza.length === this.ingredientsOk.length && this.ingredientsSelect.length === this.ingredientsOk.length){
+    if(this.ingredientsPizza.length === this.ingredientsOk.length && this.ingredientsWrong.length === 0){
+      this.printScore()
       return true;
     }
     return false;

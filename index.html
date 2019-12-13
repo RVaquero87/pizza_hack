@@ -27,7 +27,6 @@
 <body>
   
   <!-- HOME SCREEN -->
-
   <section id="start-box" class="container start-box active">
     <div class="start-box-inner">
       <h1 class="title">PIZZA HACK</h1>  
@@ -53,12 +52,10 @@
       </div>
     </div>
   </section>
-
   <!-- end HOME SCREEN -->
 
 
   <!-- MESSAGE INSTRUCTIONS -->
-
   <section id="instructions" class="container instructions">
     <div class="instructions-box">
       <h2 class="title">INSTRUCIONES</h2>
@@ -68,29 +65,32 @@
       </div>
       <h3 class="subtitle" data-box="how" ><span>¿Cómo se juega?</span></h3>
       <div id="how">
-        <p>Tienes que ir creando las Pizzas clickando en los ingredientes para que se incluyan o se eliminen de la pizza</p>
-        <p>Los ingredientes seleccionados estarán tendrán opacidad para que puedas diferenciarles de los que no estén seleccionados.</p>
-        <p>El cliente te irá diciendo pistas o pequeñas ayudas de lo que quiere.</p>
-        <p>Cada 10 segundos se hará una comprobación y se señalara en el marcador los aciertos que tengas.</p>
+        <p>Tienes que ir creando las Pizzas <b>clickando en los ingredientes</b> para que se incluyan o se eliminen de la pizza</p>
+        <p><b>Cada 10 segundos se hará una comprobación</b> y se señalara en el marcador los <b>aciertos y lo errores</b> que tengas.</p>
+        <p><b>Los ingredientes seleccionados</b> además de estar pintados en la pizza, <b>cambiarán de estado</b> en el carrousel.</p>
+        <p><b>El cliente te irán dando pistas</b> para que completes el tipo de pizza que él quiere.</p>
       </div>
       <h3 class="subtitle" data-box="win"><span>¿Cuando gano?</span></h3>
       <div id="win">
-        <p>Cuando el marcador tenga los mismos aciertos que ingredientes tiene la pizza y con ello el cliente quedará satisfecho.</p>
+        <p>Cuando el marcador tenga los <b>mismos aciertos que ingredientes tiene la pizza y que el contador de errores esté a 0.</b></p>
+        <p>De esta manera el cliente quedará satisfecho. Bon apetit</p>
       </div>
       <a id="start-game" class="btn" href="javascript:void(0)" title="Comenzar el juego">COMENZAR EL JUEGO</a>
     </div>
   </section>
-  
-    <!-- end MESSAGE INSTRUCTIONS -->
+  <!-- end MESSAGE INSTRUCTIONS -->
+
 
   <!-- GAME SCREEN -->
-
   <section id="game-box" class="container game-box">
     <div class="game-box-inner">
       <h1 class="title">PIZZA HACK</h1>  
       <div class="box-clock-score">
         <div id="clock" class="clock">0</div>
-        <p class="score"><span id="mistakes">00</span><span id="sucess">00</span> / <span id="marker">00</span></p>
+        <div class="score">
+          <p class="sucess-box"><span id="sucess">00</span> / <span id="marker">00</span> <span>Ingredientes acertados</span></p>
+          <p class="mistakes-box"><span id="mistakes">00</span> errores</p>
+        </div>
       </div>
       <div class="gaming-box">
         <div class="gaming-box-inner">
@@ -361,7 +361,6 @@
       </div>
     </div>
   </section>
-
   <!-- end GAME SCREEN -->
 
   <!-- MESSAGE SUCESS -->
@@ -387,24 +386,20 @@
   <!-- end MESSAGE SUCESS END -->
 
   <!-- MESSAGE GAME OVER -->
-
   <section id="game-over" class="container game-over-message">
       <div class="game-over-message-inner">
           <div class="box-img img-game-over">
-              <img src="assets/img/game over.png" alt="GAME OVER" title="GAME OVER">
+              <img src="assets/img/game-over.png" alt="GAME OVER" title="GAME OVER">
           </div>
           <a class="reset btn" href="javascript:void(0)" title="Volver a jugar">Volver a jugar</a>
       </div>
   </section>
-
   <!-- end MESSAGE GAME OVER -->
 
   <!-- MESSAGE MOBILE -->
-
   <section class="mobile-message">
       <p><b>PIZZA HACK</b> no está disponible en este dispositivo.</p>
   </section>
-  
    <!-- end MESSAGE MOBILE -->
 
 </body>
