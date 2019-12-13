@@ -432,12 +432,18 @@ b{
   line-height: 1;
 }
 .game-box .box-clock-score .score span#mistakes{
+  color:#e6242c;
+  font-size: 28px;
+  left: 0px;
   position: relative;
-  left: 10px;
 }
 .game-box .box-clock-score .score span#sucess{
-  left: -10px;
+  left: 10px;
   position: relative;
+}
+.game-box .box-clock-score .score span#marker{
+  position: relative;
+  left: -10px;
 }
 .game-box .gaming-box-inner{
   display: flex;

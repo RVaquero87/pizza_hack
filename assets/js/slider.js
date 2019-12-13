@@ -4,6 +4,7 @@ function sliderLoad() {
     spaceBetween: 20,
     loop: true,
     preventClicks: !1,
+    preloadImages: !1,
     breakpoints: {
       960: {
         slidesPerView: 4,

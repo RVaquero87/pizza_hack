@@ -19,8 +19,8 @@
   <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/slider.js"></script>
   <script src="assets/js/data-clients.js"></script>
-  <script src="assets/js/custom.js"></script>
   <script src="assets/js/game.js"></script>
+  <script src="assets/js/custom.js"></script>
   
 </head>
 
@@ -89,8 +89,8 @@
     <div class="game-box-inner">
       <h1 class="title">PIZZA HACK</h1>  
       <div class="box-clock-score">
-        <div class="clock">120</div>
-        <p class="score"><span id="mistakes">00</span> / <span id="sucess">10</span></p>
+        <div id="clock" class="clock">0</div>
+        <p class="score"><span id="mistakes">00</span><span id="sucess">00</span> / <span id="marker">00</span></p>
       </div>
       <div class="gaming-box">
         <div class="gaming-box-inner">
@@ -352,7 +352,7 @@
             </div>
           </div>
           <div class="box-client">
-            <div id="box-pista" class="box-pista"><p>Lorem ipsum dolor sit amet consectetur</p></div>
+            <div class="box-pista"><p id="clue">Pista</p></div>
             <div id="client" class="box-img img-client">
                 <img src="assets/img/cliente/cliente-vivaldi.png" alt="chef" title="chef">
             </div>
@@ -365,7 +365,7 @@
   <!-- end GAME SCREEN -->
 
   <!-- MESSAGE SUCESS -->
-  <section id="sucess" class="container sucess-message">
+  <section id="sucess-continue" class="container sucess-message">
       <div class="sucess-message-inner">
           <div class="box-img img-sucess">
               <img src="assets/img/continue.png" alt="Continuar" title="Continuar">
