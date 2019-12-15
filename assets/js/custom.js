@@ -74,7 +74,7 @@ window.onload = function() {
     let pizzaCanvas = new canvasPizza();
     
     //Click Slider Ingredients
-    for(let i = 0; i < instructionsTabs.length; i++){
+    for(let i = 0; i < ingredientsSlider.length; i++){
       ingredientsSlider[i].onclick = function(){
         ingredientsSlider[i].classList.toggle('active');
         if(canvasSliderArray.includes(this.id)){
