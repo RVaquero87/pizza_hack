@@ -69,6 +69,9 @@ window.onload = function() {
     //Canvas Slider Array
     let canvasSliderArray = [];
 
+    //Draw ingredients Pizza
+    let pizzaCanvas = new canvasPizza();
+    
     //Click Slider Ingredients
     for(let i = 0; i < instructionsTabs.length; i++){
       ingredientsSlider[i].onclick = function(){
@@ -76,14 +79,16 @@ window.onload = function() {
         if(canvasSliderArray.includes(this.id)){
           let selectIngredientId = canvasSliderArray.indexOf(this.id);
           canvasSliderArray.splice(selectIngredientId, 1)
+          pizzaCanvas.printIngredient(canvasSliderArray)
         }else{
           canvasSliderArray.push(this.id)
+          pizzaCanvas.printIngredient(canvasSliderArray);
         }
         console.log('canvasSliderArray',canvasSliderArray)
       }
     }
     console.log(ingredientsSlider)
-    
+
     //Get Information Pizza
     let nameClient = clients[level].nameClient;
     let imgSrcClient = clients[level].srcClient;
@@ -111,10 +116,10 @@ window.onload = function() {
       if(gamelevel.checkWinner() === true){
         clearInterval(gamelevel.intervalId);
         succesLightBox.classList.add('active')
-
-        console.log(continueBtn)
+        
         continueBtn.onclick = function(){
           level++;
+          pizzaCanvas.clearPizza();
           succesLightBox.classList.remove('active');
           for(let i = 0; i < instructionsTabs.length; i++){
             if(ingredientsSlider[i].classList.contains('active')){
