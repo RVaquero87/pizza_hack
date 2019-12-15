@@ -28,7 +28,7 @@ window.onload = function() {
 
   //Slider load
   sliderLoad();
-  
+
   //Btn Start First Screen
   startOneBtn.onclick = function(e){
     starScreen.classList.remove('active');
@@ -68,6 +68,7 @@ window.onload = function() {
 
     //Canvas Slider Array
     let canvasSliderArray = [];
+    let canvasSliderArrayIndex = [];
 
     //Draw ingredients Pizza
     let pizzaCanvas = new canvasPizza();
@@ -79,15 +80,15 @@ window.onload = function() {
         if(canvasSliderArray.includes(this.id)){
           let selectIngredientId = canvasSliderArray.indexOf(this.id);
           canvasSliderArray.splice(selectIngredientId, 1)
-          pizzaCanvas.printIngredient(canvasSliderArray)
+          canvasSliderArrayIndex.splice(selectIngredientId, 1)
+          pizzaCanvas.printIngredient(canvasSliderArray, canvasSliderArrayIndex)
         }else{
           canvasSliderArray.push(this.id)
-          pizzaCanvas.printIngredient(canvasSliderArray);
+          canvasSliderArrayIndex.push(this.dataset.depth)
+          pizzaCanvas.printIngredient(canvasSliderArray, canvasSliderArrayIndex);
         }
-        console.log('canvasSliderArray',canvasSliderArray)
       }
     }
-    console.log(ingredientsSlider)
 
     //Get Information Pizza
     let nameClient = clients[level].nameClient;

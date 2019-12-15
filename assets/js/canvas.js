@@ -4,18 +4,18 @@ class canvasPizza {
     this.width = 300;
     this.height = 300;
   }
-  printIngredient(arrayIngredients){ 
+  printIngredient(arrayIngredients, orderIndexArray){ 
+    arrayIngredients = this.sortArrayIndex(arrayIngredients,orderIndexArray);
     this.clearPizza();    
     arrayIngredients.forEach(function(ingredientID){
+      if(ingredientID != 'sal'){
         let imgIngredient;
         if(ingredientID != 'aceite'){
           imgIngredient = new Image();
           imgIngredient.src = `assets/img/pizza/${ingredientID}.svg`;
         }
-        console.log('ingredientID', ingredientID, 'imgIngredient', imgIngredient)
         switch (ingredientID) {
           case 'aceite':
-            console.log('aceite');
             this.ctx.save();
             this.ctx.beginPath();
             this.ctx.fillStyle = "#cdd84b";
@@ -192,7 +192,14 @@ class canvasPizza {
             }.bind(this)  
             break;    
         }      
+      }
     }.bind(this))
+  }
+  calculeRandoms(minNum, maxNum){
+    return Math.floor(Math.random()*(maxNum - minNum) + minNum);
+  }
+  porportionImg(height, width){
+    return height/width;
   }
   generateDraw(numMax, imgIngredient, NumSizeMain, NumSizeMax){
     for(let numDraw = 0; numDraw <= numMax; numDraw++){
@@ -202,11 +209,13 @@ class canvasPizza {
       this.ctx.drawImage(imgIngredient, positionRandomX, positionRandomY, sizeRandom, sizeRandom*this.porportionImg(imgIngredient.height, imgIngredient.width))
     }
   }
-  calculeRandoms(minNum, maxNum){
-    return Math.floor(Math.random()*(maxNum - minNum) + minNum);
-  }
-  porportionImg(height, width){
-    return height/width;
+  sortArrayIndex(arrayIngredients, orderIndexArray){
+    arrayIngredients = arrayIngredients.map(function(ingredient, indexIngredient){
+      return orderIndexArray[indexIngredient] + "-" + ingredient;
+    }).sort().map(function(ingredient){
+      return ingredient.slice(2,ingredient.length)
+    }) 
+    return arrayIngredients;
   }
   clearPizza(){
     this.ctx.clearRect(0, 0, this.width, this.height)
