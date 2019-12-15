@@ -2,7 +2,6 @@ function sliderLoad() {
   let swiper = new Swiper('.slider-ingredientes', {
     slidesPerView: 3,
     spaceBetween: 20,
-    //loop: true,
     preventClicks: 1,
     preloadImages: 1,
     breakpoints: {
