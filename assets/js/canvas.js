@@ -10,12 +10,9 @@ class canvasPizza {
     this.clearPizza();    
     arrayIngredients.forEach(function(ingredientID){
       if(ingredientID != 'sal'){
-
         if(ingredientID != 'aceite'){
           var imgIngredient = window[ingredientID + 'Canvas']
         }
-        
-        console.log('imgIngredient', imgIngredient)
         switch (ingredientID) {
           case 'aceite':
             this.ctx.save();
