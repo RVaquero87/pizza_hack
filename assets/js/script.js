@@ -131,7 +131,7 @@ window.onload = function() {
           level++;
           pizzaCanvas.clearPizza();
           succesLightBox.classList.remove('active');
-          for(let i = 0; i < instructionsTabs.length; i++){
+          for(let i = 0; i < ingredientsSlider.length; i++){
             if(ingredientsSlider[i].classList.contains('active')){
               ingredientsSlider[i].classList.remove('active');
             }

@@ -1,5 +1,16 @@
 let clients = [
   {
+    nameClient: 'Michelangelo',
+    srcClient: 'assets/img/cliente/cliente-tortuga.png',
+    namePizza: 'Pepperonni',
+    time: 100,
+    ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'salami'],
+    clues: {
+      easyClues: ['A falta de Pepperonni siempre es bueno el salami Picante', 'Sal, aceite... y 3 ingredientes más', 'El tomate frito o la salsa de tomate nunca debe faltar'],
+      hardClues: ['Origen Napolitano', 'Siempre la comía en todos los episodios', 'Nos encanta a las torugas Ninja', 'Sal y ninguna especias más'],
+    },
+  },
+  {
     nameClient: 'Vivaldi',
     srcClient: 'assets/img/cliente/cliente-vivaldi.png',
     namePizza: 'Cuatro Estaciones',
@@ -22,8 +33,8 @@ let clients = [
     },
   },
   {
-    nameClient: 'Michelangelo',
-    srcClient: 'assets/img/cliente/cliente-tortuga.png',
+    nameClient: 'Daisy',
+    srcClient: 'assets/img/cliente/cliente-daisy.png',
     namePizza: 'Margherita',
     time: 60,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'ajo', 'mozarella', 'albahaca', 'pimienta-negra', 'oregano'],
