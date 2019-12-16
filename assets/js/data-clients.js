@@ -7,7 +7,7 @@ let clients = [
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'salami'],
     clues: {
       easyClues: ['A falta de Pepperonni siempre es bueno el salami Picante', 'Sal, aceite... y 3 ingredientes más', 'El tomate frito o la salsa de tomate nunca debe faltar'],
-      hardClues: ['Origen Napolitano', 'Siempre la comía en todos los episodios', 'Nos encanta a las torugas Ninja', 'Sal y ninguna especias más'],
+      hardClues: ['Origen Napolitano', 'Siempre la comía en todos los episodios', 'Nos encanta a las tortugas Ninja', 'Sal y ninguna especia más'],
     },
   },
   {
@@ -17,15 +17,15 @@ let clients = [
     time: 120,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pina', 'queso-rallado', 'jamon', 'oregano'],
     clues: {
-      easyClues: ['Se creo en Canadá pero todos piensan que son de mi tierra', 'Hawaiana como yo', 'El jamón le va muy bien'],
-      hardClues: ['Se le adjudica al cocinero Sam Panopoulos en 1962', 'Se creó en Satelli Restaurant en Ontario, Canadá', 'Muy oidada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Un toque de oregano le es Perfecto'],
+      easyClues: ['Se creo en Canadá pero todos piensan que son de mi tierra', 'Hawaiana como yo', 'El jamón le va muy bien', 'Queso pero queso rallado'],
+      hardClues: ['Se le adjudica al cocinero Sam Panopoulos en 1962', 'Se creó en Satelli Restaurant en Ontario, Canadá', 'Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Un toque de oregano le es Perfecto'],
     },
   },
   {
     nameClient: 'Daisy',
     srcClient: 'assets/img/cliente/cliente-daisy.png',
     namePizza: 'Margherita',
-    time: 100,
+    time: 150,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'ajo', 'mozarella', 'albahaca', 'pimienta-negra', 'oregano'],
     clues: {
       easyClues: ['Lleva tomate en sus distintas formas', 'Sus ingredientes representan los colores de la bandera italiana', 'Margherita es su nombre', 'Sin especias no me convences', 'No te la pediría nunca un vámpiro'],
@@ -33,24 +33,13 @@ let clients = [
     },
   },
   {
-    nameClient: 'Heidi',
-    srcClient: 'assets/img/cliente/cliente-heidi.png',
-    namePizza: 'Primavera',
-    time: 100,
-    ingredients: ['sal', 'aceite', 'tomate-frito', 'pimiento', 'maiz', 'queso', 'tomate', 'oregano', 'huevo-duro'],
-    clues: {
-      easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además de el oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
-      hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar'],
-    },
-  },
-  {
     nameClient: 'Mario Bros',
     srcClient: 'assets/img/cliente/cliente-mario.png',
     namePizza: 'Funghi',
-    time: 100,
+    time: 150,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'queso', 'setas', 'jamon', 'mozarella', 'oregano'],
     clues: {
-      easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'El Queso y el Jamón me gustan mogollón', 'Y para terminar una pizca de oregano'],
+      easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'Queso, mozarella y jamón me gustan mogollón', 'Y para terminar una pizca de oregano'],
       hardClues: ['Me recuerda a Otoño', 'Su nombre significa hongos', 'Para paladares con devoción por los sabores auténticos', 'No es 100% vegetariana', 'Su ingrediente especial me hace crecer mucho más'],
     },
   },
@@ -58,11 +47,22 @@ let clients = [
     nameClient: 'Speedy Gonzales',
     srcClient: 'assets/img/cliente/cliente-gonzalez.png',
     namePizza: 'Diavola',
-    time: 120,
+    time: 140,
     ingredients: ['sal', 'aceite', 'mozarella', 'salami', 'tomate-frito', 'tomate', 'albahaca', 'oregano'],
     clues: {
       easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
       hardClues: ['No es apta para todo el mundo', 'Nos gusta a los Méxicanos', 'El picante es su toque especial', 'Me encanta la pizza picante', 'Diavola es su nombre'],
+    },
+  },
+  {
+    nameClient: 'Heidi',
+    srcClient: 'assets/img/cliente/cliente-heidi.png',
+    namePizza: 'Primavera',
+    time: 130,
+    ingredients: ['sal', 'aceite', 'tomate-frito', 'pimiento', 'maiz', 'queso', 'tomate', 'oregano', 'huevo-duro'],
+    clues: {
+      easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además de el oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
+      hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar', 'Tambén una pizca de oregano'],
     },
   },
   {
@@ -80,7 +80,7 @@ let clients = [
     nameClient: 'Paris Hilton',
     srcClient: 'assets/img/cliente/cliente-hilton.png',
     namePizza: 'Caprichosa',
-    time: 160,
+    time: 120,
     ingredients: ['sal', 'aceite', 'mozarella', 'huevo-duro', 'anchoas','aceitunas-negras', 'albahaca', 'setas', 'alcachofas'],
     clues: {
       easyClues: ['Un ingrediente viene del mar', 'Que fue antes el huevo o la gallina', 'Rica, rica Mozarella'],

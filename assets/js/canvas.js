@@ -6,7 +6,6 @@ class canvasPizza {
   }
   printIngredient(arrayIngredients, orderIndexArray){ 
     arrayIngredients = this.sortArrayIndex(arrayIngredients,orderIndexArray);
-    
     this.clearPizza();    
     arrayIngredients.forEach(function(ingredientID){
       if(ingredientID != 'sal'){
@@ -153,7 +152,6 @@ class canvasPizza {
     return height/width;
   }
   generateDraw(numMax, imgIngredient, NumSizeMain, NumSizeMax){
-    console.log('imgIngredient2', imgIngredient)
     for(let numDraw = 0; numDraw <= numMax; numDraw++){
       let sizeRandom = this.calculeRandoms(NumSizeMain,NumSizeMax);
       let positionRandomX = this.calculeRandoms(0, 300);
