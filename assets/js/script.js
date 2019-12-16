@@ -25,9 +25,18 @@ window.onload = function() {
   let sucessEndLightBox = document.getElementById('sucess-end');
   let gameOverLightBox = document.getElementById('game-over');
   
-
   //Slider load
   sliderLoad();
+  
+  //Charge Img Canvas Pizza
+  for(let i = 0; i < ingredientsSlider.length; i++){
+    if(ingredientsSlider[i].id != 'sal' && ingredientsSlider[i].id != 'aceite'){
+      window[ingredientsSlider[i].id + 'Canvas'] = new Image();
+      window[ingredientsSlider[i].id + 'Canvas'].src = `assets/img/pizza/${ingredientsSlider[i].id}.svg`;
+      window[ingredientsSlider[i].id + 'Canvas'].height = 100;
+      window[ingredientsSlider[i].id + 'Canvas'].width = 100;
+    }
+  }
 
   //Btn Start First Screen
   startOneBtn.onclick = function(e){

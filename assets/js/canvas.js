@@ -6,14 +6,16 @@ class canvasPizza {
   }
   printIngredient(arrayIngredients, orderIndexArray){ 
     arrayIngredients = this.sortArrayIndex(arrayIngredients,orderIndexArray);
+    
     this.clearPizza();    
     arrayIngredients.forEach(function(ingredientID){
       if(ingredientID != 'sal'){
-        let imgIngredient;
+
         if(ingredientID != 'aceite'){
-          imgIngredient = new Image();
-          imgIngredient.src = `assets/img/pizza/${ingredientID}.svg`;
+          var imgIngredient = window[ingredientID + 'Canvas']
         }
+        
+        console.log('imgIngredient', imgIngredient)
         switch (ingredientID) {
           case 'aceite':
             this.ctx.save();
@@ -24,172 +26,124 @@ class canvasPizza {
             this.ctx.restore();
             break;
           case 'aceitunas-negras':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(100, imgIngredient, 18, 22)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(100, imgIngredient, 18, 22)
             break;
           case 'aceitunas-verdes':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(100, imgIngredient, 18, 22)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(100, imgIngredient, 18, 22)
             break;
           case 'ajo':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 170;
-              imgIngredient.width = 100;
-              this.generateDraw(100, imgIngredient, 1, 3)
-            }.bind(this)
+            imgIngredient.height = 170;
+            imgIngredient.width = 100;
+            this.generateDraw(100, imgIngredient, 1, 3)
             break;
           case 'albahaca':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 70;
-              imgIngredient.width = 100;
-              this.generateDraw(80, imgIngredient, 5, 10)
-            }.bind(this)
+            imgIngredient.height = 70;
+            imgIngredient.width = 100;
+            this.generateDraw(80, imgIngredient, 5, 10)
             break;
           case 'alcachofas':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 88;
-              imgIngredient.width = 100;
-              this.generateDraw(20, imgIngredient, 20, 40)
-            }.bind(this)
+            imgIngredient.height = 88;
+            imgIngredient.width = 100;
+            this.generateDraw(20, imgIngredient, 20, 40)
             break;
           case 'anchoas':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 90;
-              imgIngredient.width = 100;
-              this.generateDraw(10, imgIngredient, 60, 80)
-            }.bind(this)
+            imgIngredient.height = 90;
+            imgIngredient.width = 100;
+            this.generateDraw(10, imgIngredient, 60, 80)
             break;
           case 'bacon':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 110;
-              imgIngredient.width = 100;
-              this.generateDraw(50, imgIngredient, 10, 15)
-            }.bind(this)
+            imgIngredient.height = 110;
+            imgIngredient.width = 100;
+            this.generateDraw(50, imgIngredient, 10, 15)
             break;
           case 'berenjena':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(20, imgIngredient, 30, 35)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(20, imgIngredient, 30, 35)
             break;
           case 'carne-picada':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(80, imgIngredient, 10, 15)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(80, imgIngredient, 10, 15)
             break;
           case 'cebolla':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 105;
-              imgIngredient.width = 100;
-              this.generateDraw(40, imgIngredient, 20, 25)
-            }.bind(this)
+            imgIngredient.height = 105;
+            imgIngredient.width = 100;
+            this.generateDraw(40, imgIngredient, 20, 25)
             break;
           case 'fresas':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 110;
-              imgIngredient.width = 100;
-              this.generateDraw(25, imgIngredient, 22, 25)
-            }.bind(this)
+            imgIngredient.height = 110;
+            imgIngredient.width = 100;
+            this.generateDraw(25, imgIngredient, 22, 25)
             break;
           case 'huevo-duro':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 105;
-              imgIngredient.width = 100;
-              this.generateDraw(20, imgIngredient, 22, 25)
-            }.bind(this)
+            imgIngredient.height = 105;
+            imgIngredient.width = 100;
+            this.generateDraw(20, imgIngredient, 22, 25)
             break;
           case 'jamon':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 190;
-              imgIngredient.width = 100;
-              this.generateDraw(150, imgIngredient, 8, 12)
-            }.bind(this)
+            imgIngredient.height = 190;
+            imgIngredient.width = 100;
+            this.generateDraw(150, imgIngredient, 8, 12)
             break;
           case 'maiz':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 130;
-              imgIngredient.width = 100;
-              this.generateDraw(80, imgIngredient, 8, 10)
-            }.bind(this)
+            imgIngredient.height = 130;
+            imgIngredient.width = 100;
+            this.generateDraw(80, imgIngredient, 8, 10)
             break;
           case 'mozarella':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(20, imgIngredient, 35, 40)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(20, imgIngredient, 35, 40)
             break;
           case 'oregano':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 170;
-              imgIngredient.width = 100;
-              this.generateDraw(200, imgIngredient, 1, 3)
-            }.bind(this)
+            imgIngredient.height = 170;
+            imgIngredient.width = 100;
+            this.generateDraw(200, imgIngredient, 1, 3)
             break;
           case 'pimienta-negra':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 190;
-              imgIngredient.width = 100;
-              this.generateDraw(200, imgIngredient, 1, 2)
-            }.bind(this)
+            imgIngredient.height = 190;
+            imgIngredient.width = 100;
+            this.generateDraw(200, imgIngredient, 1, 2)
             break;
           case 'pimiento':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(100, imgIngredient, 25, 30)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(100, imgIngredient, 25, 30)
             break;
           case 'pina':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(70, imgIngredient, 15, 20)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(70, imgIngredient, 15, 20)
             break;
           case 'pollo':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 120;
-              imgIngredient.width = 100;
-              this.generateDraw(80, imgIngredient, 10, 15)
-            }.bind(this)
+            imgIngredient.height = 120;
+            imgIngredient.width = 100;
+            this.generateDraw(80, imgIngredient, 10, 15)
             break;
           case 'salami':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(50, imgIngredient, 20, 25)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(50, imgIngredient, 20, 25)
             break;
           case 'setas':
-            imgIngredient.onload = function(){
-              imgIngredient.height = 100;
-              imgIngredient.width = 100;
-              this.generateDraw(80, imgIngredient, 20, 25)
-            }.bind(this)
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(80, imgIngredient, 20, 25)
             break;
           case 'tomate':
-          imgIngredient.onload = function(){
             imgIngredient.height = 100;
             imgIngredient.width = 100;
             this.generateDraw(70, imgIngredient, 20, 30)
-          }.bind(this)
-          break;
+            break;
           default:
-            imgIngredient.onload = function(){
-              imgIngredient.height = 290;
-              imgIngredient.width = 290;
-              this.ctx.drawImage(imgIngredient, 5, 5, imgIngredient.width, imgIngredient.height)
-            }.bind(this)  
+            imgIngredient.height = 290;
+            imgIngredient.width = 290;
+            this.ctx.drawImage(imgIngredient, 5, 5, imgIngredient.width, imgIngredient.height)
             break;    
         }      
       }
@@ -202,6 +156,7 @@ class canvasPizza {
     return height/width;
   }
   generateDraw(numMax, imgIngredient, NumSizeMain, NumSizeMax){
+    console.log('imgIngredient2', imgIngredient)
     for(let numDraw = 0; numDraw <= numMax; numDraw++){
       let sizeRandom = this.calculeRandoms(NumSizeMain,NumSizeMax);
       let positionRandomX = this.calculeRandoms(0, 300);
