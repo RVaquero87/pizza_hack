@@ -18,10 +18,8 @@ class game {
     this.printTime();
     this.buildIngredientsWrong(arrayCanvas);
     this.buildIngredientsOk(arrayCanvas);
-    if(this.currentTime%10 == 0){
-      this.printClues()
-    }
     if(this.currentTime%5 == 0){
+      this.printClues()
       this.printScore(arrayCanvas);
     }
     this.checkGameOver();
