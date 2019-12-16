@@ -3,29 +3,29 @@ let clients = [
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Pepperonni',
-    time: 120,
+    time: 100,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'salami'],
     clues: {
-      easyClues: ['A falta de Pepperonni siempre es bueno el salami Picante', 'Sal, aceite... y 3 ingredientes más', 'El tomate frito o la salsa de tomate nunca debe faltar'],
-      hardClues: ['Origen Napolitano', 'Siempre la comía en todos los episodios', 'Nos encanta a las tortugas Ninja', 'Sal y ninguna especia más'],
+      easyClues: ['A falta de Pepperonni siempre es bueno el salami Picante', 'El tomate frito o la salsa de tomate nunca debe faltar'],
+      hardClues: ['Origen Napolitano', 'Siempre la comía en todos los episodios', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
     },
   },
   {
     nameClient: 'Moana',
     srcClient: 'assets/img/cliente/cliente-moana.png',
     namePizza: 'Hawaiana',
-    time: 120,
+    time: 90,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pina', 'queso-rallado', 'jamon', 'oregano'],
     clues: {
-      easyClues: ['Se creo en Canadá pero todos piensan que son de mi tierra', 'Hawaiana como yo', 'El jamón le va muy bien', 'Queso pero queso rallado'],
-      hardClues: ['Se le adjudica al cocinero Sam Panopoulos en 1962', 'Se creó en Satelli Restaurant en Ontario, Canadá', 'Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Un toque de oregano le es Perfecto'],
+      easyClues: ['Hawaiana como yo', 'El jamón le va muy bien', 'Queso pero queso rallado'],
+      hardClues: ['Se le adjudica al cocinero Sam Panopoulos en 1962', 'Se creó en Satelli Restaurant en Ontario, Canadá', 'Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Un toque de oregano le es Perfecto', 'Se creo en Canadá pero todos piensan que son de mi tierra'],
     },
   },
   {
     nameClient: 'Daisy',
     srcClient: 'assets/img/cliente/cliente-daisy.png',
     namePizza: 'Margherita',
-    time: 150,
+    time: 90,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'ajo', 'mozarella', 'albahaca', 'pimienta-negra', 'oregano'],
     clues: {
       easyClues: ['Lleva tomate en sus distintas formas', 'Sus ingredientes representan los colores de la bandera italiana', 'Margherita es su nombre', 'Sin especias no me convences', 'No te la pediría nunca un vámpiro'],
@@ -36,7 +36,7 @@ let clients = [
     nameClient: 'Mario Bros',
     srcClient: 'assets/img/cliente/cliente-mario.png',
     namePizza: 'Funghi',
-    time: 150,
+    time: 80,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'queso', 'setas', 'jamon', 'mozarella', 'oregano'],
     clues: {
       easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'Queso, mozarella y jamón me gustan mogollón', 'Y para terminar una pizca de oregano'],
@@ -47,7 +47,7 @@ let clients = [
     nameClient: 'Speedy Gonzales',
     srcClient: 'assets/img/cliente/cliente-gonzalez.png',
     namePizza: 'Diavola',
-    time: 140,
+    time: 80,
     ingredients: ['sal', 'aceite', 'mozarella', 'salami', 'tomate-frito', 'tomate', 'albahaca', 'oregano'],
     clues: {
       easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
@@ -58,7 +58,7 @@ let clients = [
     nameClient: 'Heidi',
     srcClient: 'assets/img/cliente/cliente-heidi.png',
     namePizza: 'Primavera',
-    time: 130,
+    time: 80,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pimiento', 'maiz', 'queso', 'tomate', 'oregano', 'huevo-duro'],
     clues: {
       easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además de el oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
@@ -69,7 +69,7 @@ let clients = [
     nameClient: 'Vivaldi',
     srcClient: 'assets/img/cliente/cliente-vivaldi.png',
     namePizza: 'Cuatro Estaciones',
-    time: 120,
+    time: 70,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'mozarella', 'alcachofas', 'aceitunas-negras', 'jamon', 'setas', 'pimienta-negra'],
     clues:{
       easyClues: ['Ni pescado ni fruta por favor', 'Como buena Pizza hay que empezar con los básicos', 'Las aceitunas verdes no le pegan demasiado', 'Tomate en sus distintas formas', 'Las Alcachofas le dan un toque'],
@@ -80,7 +80,7 @@ let clients = [
     nameClient: 'Paris Hilton',
     srcClient: 'assets/img/cliente/cliente-hilton.png',
     namePizza: 'Caprichosa',
-    time: 120,
+    time: 60,
     ingredients: ['sal', 'aceite', 'mozarella', 'huevo-duro', 'anchoas','aceitunas-negras', 'albahaca', 'setas', 'alcachofas'],
     clues: {
       easyClues: ['Un ingrediente viene del mar', 'Que fue antes el huevo o la gallina', 'Rica, rica Mozarella'],

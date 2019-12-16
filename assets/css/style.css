@@ -569,6 +569,7 @@ b{
 .gaming-box-inner .swiper-button-next.swiper-button-disabled, 
 .gaming-box-inner .swiper-button-prev.swiper-button-disabled{
  color: rgba(31, 175, 23, .5);
+ pointer-events: initial;
 }
 .gaming-box-inner .box-client{
   position: relative;
@@ -604,8 +605,12 @@ b{
   padding: 40px 20px;
   position: relative;
   text-align: center;
+  user-select: none; 
   width: 300px;
   z-index: 1;
+}
+.gaming-box-inner .box-client .img-client{
+  user-select: none;
 }
 /* end GAME SCREEN */
 

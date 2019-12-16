@@ -1,7 +1,6 @@
 class game {
   constructor(ingredientsPizza, time, clues) {
     this.ingredientsPizza = ingredientsPizza;
-    this.ingredientsSelect = [];
     this.ingredientsWrong = [];
     this.ingredientsOk = [];
     this.clues = clues;
@@ -14,21 +13,11 @@ class game {
     this.printScore();
     this.printClues();
   }
-  playingGame(arrayCanvas){
+  playingGame(){
     this.printTime();
-    this.buildIngredientsWrong(arrayCanvas);
-    this.buildIngredientsOk(arrayCanvas);
-    if(this.currentTime%1== 0){
-      this.printScore(arrayCanvas);
-    }
     if(this.currentTime%5 == 0){
       this.printClues()
     }
-    this.checkGameOver();
-    this.checkWinner();
-  }
-  buildIngredientsSelect(arrayCanvas){
-    this.ingredientsSelect = arrayCanvas;
   }
   buildIngredientsOk(arrayCanvas){
     this.ingredientsOk  = arrayCanvas.filter(function(ingredient){
@@ -44,7 +33,10 @@ class game {
     this.currentTime-=1
     clock.innerText = this.currentTime;
   }
-  printScore(){
+  printScore(arrayCanvas){
+    if(!arrayCanvas) arrayCanvas = []
+    this.buildIngredientsWrong(arrayCanvas);
+    this.buildIngredientsOk(arrayCanvas);
     mistakes.innerText = new String(this.ingredientsWrong.length).padStart(2, '00');
     sucess.innerText = new String(this.ingredientsOk.length).padStart(2, '00');
     marker.innerText = new String(this.ingredientsPizza.length).padStart(2, '00');
@@ -65,6 +57,9 @@ class game {
     return false;
   }
   checkWinner(){
+
+    console.log('wrong', this.ingredientsWrong)
+    console.log('ok', this.ingredientsOk)
     if(this.ingredientsPizza.length === this.ingredientsOk.length && this.ingredientsWrong.length === 0){
       this.printScore()
       return true;
