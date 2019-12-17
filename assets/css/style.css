@@ -382,14 +382,29 @@ b{
   max-height: 1080px;
   position: relative;
 }
+.game-box .box-title{
+  display: inline-block;
+  transform: rotate(-13deg);
+}
 .game-box .title{
   color: #1faf17;
-  display: inline-block;
+  display: block;
   font-family: 'Lobster Two', cursive, Arial, sans-serif;
   font-size: 56px;
   font-weight: 400;
   text-align: left;
-  transform: rotate(-13deg);
+}
+.game-box .level-box{
+  color: #e6242c;
+  display: block;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-left: 185px;
+  text-align: left;
+}
+.game-box .level-box span{
+  font-size: 22px;
 }
 .game-box .gaming-box{
   margin-bottom: 30px;

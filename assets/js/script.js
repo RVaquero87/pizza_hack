@@ -11,6 +11,8 @@ window.onload = function() {
   
   //Screen game
   let gameScreen = document.getElementById('game-box');
+	let levelActually = document.getElementById('level-actually');
+  let levelTotal = document.getElementById('level-total');
   let ingredientsSlider = document.querySelectorAll('#ingredients .box-ingredient-item > a');
   let imgClient = document.querySelectorAll('#client img');
   
@@ -43,6 +45,7 @@ window.onload = function() {
     starScreen.classList.remove('active');
     gameScreen.classList.add('active');
     instructionsLightBox.classList.add('active');
+    printLevel();
   }
   
   //Instructions Tabs
@@ -78,6 +81,9 @@ window.onload = function() {
   //Start Game
   startGameBtn.onclick = function startGame(){
     instructionsLightBox.classList.remove('active');
+
+    //Print Level
+    printLevel();
 
     //Canvas Slider Array
     let canvasSliderArray = [];
@@ -167,6 +173,12 @@ window.onload = function() {
     resetBtn[i].onclick = function(e){
       location.reload();
     }
+  }
+
+  //Functions
+  function printLevel(){
+    levelActually.innerText = new String(level + 1)
+    levelTotal.innerText = new String(clients.length)
   }
 
 }
