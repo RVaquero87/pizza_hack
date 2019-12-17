@@ -101,6 +101,11 @@ class canvasPizza {
             imgIngredient.width = 100;
             this.generateDraw(200, imgIngredient, 1, 3)
             break;
+          case 'pepperoni':
+            imgIngredient.height = 100;
+            imgIngredient.width = 100;
+            this.generateDraw(60, imgIngredient, 30, 35)
+            break;
           case 'pimienta-negra':
             imgIngredient.height = 190;
             imgIngredient.width = 100;

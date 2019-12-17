@@ -2,11 +2,11 @@ let clients = [
   {
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
-    namePizza: 'Pepperonni',
+    namePizza: 'Pepperoni',
     time: 100,
-    ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'salami'],
+    ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni'],
     clues: {
-      easyClues: ['A falta de Pepperonni siempre es bueno el salami picante', 'El tomate frito o la salsa de tomate nunca debe faltar'],
+      easyClues: ['El Pepperoni me vuelve loco', 'El tomate frito o la salsa de tomate nunca debe faltar'],
       hardClues: ['Pizza de origen Napolitano', 'Siempre nos veías comiendo esta pizza', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
     },
   },
