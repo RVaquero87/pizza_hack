@@ -50,7 +50,17 @@ window.onload = function() {
     instructionsTabs[i].onclick = function(e){
       let instructionsTabsId = instructionsTabs[i].getAttribute('data-box');
       let instructionsTabsDiv = document.getElementById(instructionsTabsId)
-      if(!instructionsTabs[i].classList.contains('active')){
+      if(instructionsTabs[i].classList.contains('active')){
+        for(let j = 0; j < instructionsTabs.length; j++){
+          instructionsTabs[j].classList.remove('active');
+        }
+        for(let j = 0; j < instructionsBoxTabs.length; j++){
+          instructionsBoxTabs[j].classList.remove('active');
+        }
+        instructionsTabs[i].classList.remove('active');
+        instructionsTabsDiv.classList.remove('active');
+      } else {
+        
         for(let j = 0; j < instructionsTabs.length; j++){
           instructionsTabs[j].classList.remove('active');
         }
