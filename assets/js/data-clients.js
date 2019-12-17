@@ -3,7 +3,6 @@ let clients = [
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Pepperoni',
-    time: 1,
     time: 100,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni'],
     clues: {

@@ -32,13 +32,13 @@ b{
   border-radius: 10px;
   color:#fff;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 1;
   margin: 0 auto;
   max-width: 220px;
-  padding: 20px 10px;
+  padding: 20px 10px 18px;
   text-align: center;
   text-decoration: none;
   text-transform:uppercase;
@@ -101,9 +101,10 @@ b{
 }
 .start-box .description{
   color: #1faf17;
-  font-family: Arial, sans-serif;
-  font-size: 24px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 25px;
   font-weight: 400;
+  letter-spacing: -.3px;
   line-height: 31px;
   max-width: 280px;
   position: absolute;
@@ -158,11 +159,11 @@ b{
   border-radius: 8px;
   color:#fff;
   display: block;
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: .9;
-  padding: 18px;
+  padding: 18px 20px;
   position: relative;
   z-index: 2;
 }
@@ -349,7 +350,7 @@ b{
   transition:all ease-in 500ms;
 }
 .instructions-box > div p{
-  font-family: Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   color:#000;
   padding-bottom: 12px;
   font-size: 18px;
@@ -614,10 +615,10 @@ b{
 .gaming-box-inner .box-client .box-pista p{
   color: #000;
   display: block;
-  font-family: arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.3;
-  padding: 40px 20px;
+  padding: 40px 22px;
   position: relative;
   text-align: center;
   user-select: none; 
@@ -665,7 +666,7 @@ b{
 }
 .success-message p {
   color: #1faf17;
-  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -712,7 +713,7 @@ b{
 }
 .success-end-message p {
   color: #1faf17;
-  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -755,7 +756,7 @@ b{
 }
 .game-over-message p {
   color: #e6242c;
-  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -784,15 +785,22 @@ b{
 .mobile-message p{
   background: rgba(255,255,255,.8);
   border-radius: 25px;
-  box-shadow: 1px 1px 41px #000;
+  box-shadow: 1px 1px 25px #000;
   color: #1faf17;
-  font-family: 'Lobster Two', cursive, Arial, sans-serif;
-  font-size: 36px;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 24px;
   font-weight: 400;
-  max-width: 450px;
-  padding: 40px;
+  line-height: 1.2;
+  max-width: 400px;
+  padding: 35px;
   text-align: center;
   width: 90%;
+}
+.mobile-message p b{
+  display: block;
+  font-family: 'Lobster Two', cursive, Arial, sans-serif;
+  font-size: 42px;
+  line-height: 1.4;
 }
 /* end MESSAGE MOBILE */
 
