@@ -3,6 +3,7 @@ let clients = [
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Pepperoni',
+    time: 1,
     time: 100,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni'],
     clues: {
@@ -61,7 +62,7 @@ let clients = [
       easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
       hardClues: ['No es apta para todo el mundo', 'Nos gusta a los Méxicanos', 'El picante es su toque especial', 'Diavola es su nombre'],
     },
-    success:'!Padrísimo¡ ¡A huevo, la Pizza que preparaste está chingona!',
+    success:'!Padrísimo¡ La Pizza que preparaste está chingona',
     gameOver:'¡Ándale! ¡ándale! ¡Se te quemó el horno güey!',
   },
   {
@@ -87,7 +88,7 @@ let clients = [
       easyClues: ['Ni pescado ni fruta por favor', 'Como buena Pizza hay que empezar con los básicos', 'Las aceitunas verdes no le pegan demasiado', 'Tomate en sus distintas formas', 'Las Alcachofas le dan un toque'],
       hardClues: ['Si estás indeciso, está es tu pizza', 'Es perfecta para cualquier estación', 'No te olvides de darle un poco de sazón', 'Tiene alimentos de las 4 estaciones'],
     },
-    success:'¡Está pizza desentona! Creo que hemos perdido estaciones por el camino',
+    success:'¡Perfecto, esto es una Pizza 4 Estaciones a mi altura!',
     gameOver:'¡Esta pizza desentona! Me voy con la música a otra parte',
   },
   {
