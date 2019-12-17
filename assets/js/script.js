@@ -117,11 +117,9 @@ window.onload = function() {
       
       //PlayingGame
       gamelevel.playingGame(canvasSliderArray);
-      console.log('hola')
 
       //Sucees or Sucees end
       if(gamelevel.checkWinner() === true){
-        console.log('gano')
         clearInterval(gamelevel.intervalId);
         succesLightBox.classList.add('active')
         

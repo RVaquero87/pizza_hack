@@ -94,7 +94,7 @@ class canvasPizza {
           case 'mozarella':
             imgIngredient.height = 100;
             imgIngredient.width = 100;
-            this.generateDraw(20, imgIngredient, 35, 40)
+            this.generateDraw(20, imgIngredient, 50, 60)
             break;
           case 'oregano':
             imgIngredient.height = 170;

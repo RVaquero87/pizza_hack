@@ -57,9 +57,6 @@ class game {
     return false;
   }
   checkWinner(){
-
-    console.log('wrong', this.ingredientsWrong)
-    console.log('ok', this.ingredientsOk)
     if(this.ingredientsPizza.length === this.ingredientsOk.length && this.ingredientsWrong.length === 0){
       this.printScore()
       return true;

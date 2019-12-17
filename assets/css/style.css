@@ -41,7 +41,7 @@ b{
   padding: 20px 10px;
   text-align: center;
   text-decoration: none;
-  text-transform:capitalize;
+  text-transform:uppercase;
 }
 .btn:hover{
   background:rgba(31, 175, 23, .85);

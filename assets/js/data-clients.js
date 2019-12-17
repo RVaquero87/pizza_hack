@@ -7,7 +7,7 @@ let clients = [
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'salami'],
     clues: {
       easyClues: ['A falta de Pepperonni siempre es bueno el salami picante', 'El tomate frito o la salsa de tomate nunca debe faltar'],
-      hardClues: ['Origen Napolitano', 'Siempre nos veías comiendo esta pizza', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
+      hardClues: ['Pizza de origen Napolitano', 'Siempre nos veías comiendo esta pizza', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
     },
   },
   {
@@ -18,7 +18,7 @@ let clients = [
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pina', 'queso-rallado', 'jamon', 'oregano'],
     clues: {
       easyClues: ['Hawaiana como yo', 'El jamón le va muy bien', 'Queso pero queso rallado', 'Un toque de oregano le es Perfecto',],
-      hardClues: ['Se creó en Satelli Restaurant en Ontario, Canadá', 'Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Se creo en Canadá pero todos piensan que es de mi tierra'],
+      hardClues: ['Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Se creo en Canadá pero todos piensan que es de mi tierra'],
     },
   },
   {
@@ -29,7 +29,7 @@ let clients = [
     ingredients: ['sal', 'aceite', 'tomate-frito', 'tomate', 'ajo', 'mozarella', 'albahaca', 'pimienta-negra', 'oregano'],
     clues: {
       easyClues: ['Lleva tomate en sus distintas formas', 'Sus ingredientes representan los colores de la bandera italiana', 'Margherita es su nombre', 'Sin especias no me convences', 'No te la pediría nunca un vámpiro'],
-      hardClues: ['Es la pizza de las reinas', 'Surgio en 1889 en el Palacio de Capodimonte', 'Se le atribuye al cocinero Raffaele Esposito', 'La favorita de los niños', 'Se llama así por la reina Margherita di Savoia'],
+      hardClues: ['Es la pizza de las reinas', 'Surgio en 1889 en el Palacio de Capodimonte', 'La favorita de los niños', 'Se llama así por la reina Margherita di Savoia'],
     },
   },
   {
@@ -39,7 +39,7 @@ let clients = [
     time: 80,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'queso', 'setas', 'jamon', 'mozarella', 'oregano'],
     clues: {
-      easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'Queso, mozarella y jamón me gustan mogollón', 'Y para terminar una pizca de oregano'],
+      easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'Queso, mozarella y jamón me gustan mogollón', 'Para terminar una pizca de oregano'],
       hardClues: ['Me recuerda a Otoño', 'Su nombre significa hongos', 'Para paladares con devoción por los sabores auténticos', 'No es 100% vegetariana', 'Su ingrediente especial me hace crecer mucho más'],
     },
   },
@@ -61,8 +61,8 @@ let clients = [
     time: 80,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'pimiento', 'maiz', 'queso', 'tomate', 'oregano', 'huevo-duro'],
     clues: {
-      easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además de el oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
-      hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar', 'Tambén una pizca de oregano'],
+      easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además del oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
+      hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar', 'Sin duda, una pizca de oregano'],
     },
   },
   {
