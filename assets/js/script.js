@@ -24,8 +24,11 @@ window.onload = function() {
 
   //LightBox 
   let succesLightBox = document.getElementById('success-continue');
+  let succesClient = document.getElementById('success-client');
   let successEndLightBox = document.getElementById('success-end');
+  let successEndClient = document.getElementById('success-client-end');
   let gameOverLightBox = document.getElementById('game-over');
+  let gameOverClient = document.getElementById('game-over-client');
   
   //Slider load
   sliderLoad();
@@ -116,7 +119,9 @@ window.onload = function() {
     let imgSrcClient = clients[level].srcClient;
     let ingredientsPizza = clients[level].ingredients;
     let time = clients[level].time;
-    let clues = clients[level].clues;    
+    let clues = clients[level].clues;   
+    let successMessage = clients[level].success;
+    let gameOverMessage = clients[level].gameOver;
     
     // Chanfe img Client
     for(let i = 0; i < imgClient.length; i++){
@@ -137,7 +142,14 @@ window.onload = function() {
       //Sucees or Sucees end
       if(gamelevel.checkWinner() === true){
         clearInterval(gamelevel.intervalId);
-        succesLightBox.classList.add('active')
+
+        if(level == clients.length-1){
+          successEndClient.innerText = successMessage;
+          successEndLightBox.classList.add('active')
+        } else {
+          succesClient.innerText = successMessage;
+          succesLightBox.classList.add('active')
+        }
         
         continueBtn.onclick = function(){
           level++;
@@ -151,15 +163,12 @@ window.onload = function() {
           startGame();
         }
 
-        if(level == clients.length-1){
-          successEndLightBox.classList.add('active')
-        }
-
       }
       
       //Game Over
       if(gamelevel.checkGameOver() === true){
         clearInterval(gamelevel.intervalId);
+        gameOverClient.innerText = gameOverMessage
         gameOverLightBox.classList.add('active')
       }
     },1000)

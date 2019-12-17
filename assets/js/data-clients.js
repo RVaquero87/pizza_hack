@@ -3,12 +3,15 @@ let clients = [
     nameClient: 'Michelangelo',
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Pepperoni',
+    time: 1,
     time: 100,
     ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni'],
     clues: {
       easyClues: ['El Pepperoni me vuelve loco', 'El tomate frito o la salsa de tomate nunca debe faltar'],
       hardClues: ['Pizza de origen Napolitano', 'Siempre nos veías comiendo esta pizza', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
     },
+    success:'¡Cowabunga! Está es la pizza que amo',
+    gameOver:'¡Vaya Pizza! No se la deseo ni a mis peores enemigos',
   },
   {
     nameClient: 'Moana',
@@ -20,6 +23,8 @@ let clients = [
       easyClues: ['Hawaiana como yo', 'El jamón le va muy bien', 'Queso pero queso rallado', 'Un toque de oregano le es Perfecto',],
       hardClues: ['Muy odiada o muy querida, no deja indiferente a nadie', 'No se te olvide la sal y el aceite', 'Se creo en Canadá pero todos piensan que es de mi tierra'],
     },
+    success:'¡Por está Pizza me iría más alla del arrecife!',
+    gameOver:'Yo soy Moana de Motunui, ¡y está no es mi Pizza!',
   },
   {
     nameClient: 'Daisy',
@@ -31,6 +36,8 @@ let clients = [
       easyClues: ['Lleva tomate en sus distintas formas', 'Sus ingredientes representan los colores de la bandera italiana', 'Margherita es su nombre', 'Sin especias no me convences', 'No te la pediría nunca un vámpiro'],
       hardClues: ['Es la pizza de las reinas', 'Surgio en 1889 en el Palacio de Capodimonte', 'La favorita de los niños', 'Se llama así por la reina Margherita di Savoia'],
     },
+    success:'¡Perfecta! Seguro que mi amor Luigi la comparte conmigo',
+    gameOver:'¿Eres Bowser? ¡Parece que me quieres envenenar!',
   },
   {
     nameClient: 'Mario Bros',
@@ -42,6 +49,8 @@ let clients = [
       easyClues: ['La llaman Funghi', 'Si la comiese Toad sería un caníval', 'Queso, mozarella y jamón me gustan mogollón', 'Para terminar una pizca de oregano'],
       hardClues: ['Me recuerda a Otoño', 'Su nombre significa hongos', 'Para paladares con devoción por los sabores auténticos', 'No es 100% vegetariana', 'Su ingrediente especial me hace crecer mucho más'],
     },
+    success:'¡Mamma Mia! ¡Así, cómo la hacía la mia Mamma!',
+    gameOver:'¡Puagh! Bueno... lo que no te mata, te hace más pequeño',
   },
   {
     nameClient: 'Speedy Gonzales',
@@ -53,6 +62,8 @@ let clients = [
       easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
       hardClues: ['No es apta para todo el mundo', 'Nos gusta a los Méxicanos', 'El picante es su toque especial', 'Diavola es su nombre'],
     },
+    success:'!Padrísimo¡ La Pizza que preparaste está chingona',
+    gameOver:'¡Ándale! ¡ándale! ¡Se te quemó el horno güey!',
   },
   {
     nameClient: 'Heidi',
@@ -64,6 +75,8 @@ let clients = [
       easyClues: ['Las gallinas nos ayudan con un ingrediente', 'Un ingrediente amarillo encaja en está Pizza muy bien', 'Además del oregano no se te olvide otro ingrediente verde', 'Tomate y queso no debe faltar'],
       hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar', 'Sin duda, una pizca de oregano'],
     },
+    success:'¡Mmmm! ¡Que rica! La compartiré con Clara y Pedro',
+    gameOver:'¡Oh vaya! Está no es mi Pizza. ¡Sé la daré a Niebla!',
   },
   {
     nameClient: 'Vivaldi',
@@ -75,6 +88,8 @@ let clients = [
       easyClues: ['Ni pescado ni fruta por favor', 'Como buena Pizza hay que empezar con los básicos', 'Las aceitunas verdes no le pegan demasiado', 'Tomate en sus distintas formas', 'Las Alcachofas le dan un toque'],
       hardClues: ['Si estás indeciso, está es tu pizza', 'Es perfecta para cualquier estación', 'No te olvides de darle un poco de sazón', 'Tiene alimentos de las 4 estaciones'],
     },
+    success:'¡Perfecto, esto es una Pizza 4 Estaciones a mi altura!',
+    gameOver:'¡Esta pizza desentona! Me voy con la música a otra parte',
   },
   {
     nameClient: 'Paris Hilton',
@@ -86,5 +101,7 @@ let clients = [
       easyClues: ['Un ingrediente viene del mar', 'Que fue antes el huevo o la gallina', 'Rica, rica Mozarella'],
       hardClues: ['Pizza para gente exigente','Es una explosión de sabores', 'Es una pizza Caprichosa, como yo'],
     },
+    success:'¡Perfecta! Tan perfecta como yo',
+    gameOver:'No mereces un minuto más de mi tiempo ¡Adiós!',
   },
 ]
