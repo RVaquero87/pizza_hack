@@ -443,7 +443,7 @@ b{
   line-height: 1;
   text-align: right;
 }
-.game-box .box-clock-score .score .sucess-box {
+.game-box .box-clock-score .score .success-box {
   color: #1faf17;
   font-size: 44px;
   left: 12px;
@@ -452,7 +452,7 @@ b{
 .game-box .box-clock-score .score span {
   top: 6px;
 }
-.game-box .box-clock-score .score span#sucess {
+.game-box .box-clock-score .score span#success {
   left: 10px;
   position: relative;
 }
@@ -460,7 +460,7 @@ b{
   position: relative;
   left: -10px;
 }
-.game-box .box-clock-score .score .sucess-box span:last-child {
+.game-box .box-clock-score .score .success-box span:last-child {
   display: block;
   font-size: 20px;
   left: -11px;
@@ -629,8 +629,8 @@ b{
 }
 /* end GAME SCREEN */
 
-/* MESSAGE SUCESS */
-.sucess-message{
+/* MESSAGE SUCCESS */
+.success-message{
   align-items: center;
   background: rgba(0,0,0,.4);
   display: flex;
@@ -641,16 +641,16 @@ b{
   transition: transform 600ms ease-out, opacity 300ms ease-out;
   z-index: -1;
 }
-.sucess-message.active{
+.success-message.active{
   transform: scale(1);
   opacity: 1;
   z-index: 5;
 }
-.sucess-message-inner{
+.success-message-inner{
   position: relative;
   max-width: 550px;
 }
-.sucess-message-inner:before{
+.success-message-inner:before{
   content:'';
   position: absolute;
   display: block;
@@ -665,18 +665,18 @@ b{
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
 }
-.sucess-message .img-sucess img{
+.success-message .img-success img{
   position: relative;
   left:50px;
 }
-.sucess-message a{
+.success-message a{
   position: relative;
   top: -80px;
 }
-/* end MESSAGE SUCESS */
+/* end MESSAGE SUCCESS */
 
-/* MESSAGE SUCESS END */
-.sucess-end-message{
+/* MESSAGE SUCCESS END */
+.success-end-message{
   align-items: center;
   background: rgba(0,0,0,.4);
   display: flex;
@@ -687,16 +687,16 @@ b{
   transition: transform 600ms ease-out, opacity 300ms ease-out;
   z-index: -1;
 }
-.sucess-end-message.active{
+.success-end-message.active{
   transform: scale(1);
   opacity: 1;
   z-index: 5;
 }
-.sucess-end-message-inner{
+.success-end-message-inner{
   position: relative;
   max-width: 550px;
 }
-.sucess-end-message-inner:before{
+.success-end-message-inner:before{
   content:'';
   position: absolute;
   display: block;
@@ -711,14 +711,14 @@ b{
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
 }
-.sucess-end-message .img-sucess-end img{
+.success-end-message .img-success-end img{
   position: relative;
   left:50px;
 }
-.sucess-end-message a{
+.success-end-message a{
  position: relative;
 }
-/* end MESSAGE SUCESS END */
+/* end MESSAGE SUCCESS END */
 
 /* MESSAGE GAME OVER */
 .game-over-message{
@@ -884,8 +884,8 @@ b{
   .container.start-box, 
   .container.game-box,
   .container.instructions,
-  .container.sucess-message,
-  .container.sucess-end-message,
+  .container.success-message,
+  .container.success-end-message,
   .container.game-over-message{
     display: none;
   }
@@ -903,8 +903,8 @@ b{
   .container.start-box, 
   .container.game-box,
   .container.instructions,
-  .container.sucess-message,
-  .container.sucess-end-message,
+  .container.success-message,
+  .container.success-end-message,
   .container.game-over-message{
     display: none;
   }

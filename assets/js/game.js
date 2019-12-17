@@ -38,7 +38,7 @@ class game {
     this.buildIngredientsWrong(arrayCanvas);
     this.buildIngredientsOk(arrayCanvas);
     mistakes.innerText = new String(this.ingredientsWrong.length).padStart(2, '00');
-    sucess.innerText = new String(this.ingredientsOk.length).padStart(2, '00');
+    success.innerText = new String(this.ingredientsOk.length).padStart(2, '00');
     marker.innerText = new String(this.ingredientsPizza.length).padStart(2, '00');
   }
   printClues(){;

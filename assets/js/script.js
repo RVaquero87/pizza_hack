@@ -23,8 +23,8 @@ window.onload = function() {
   let continueBtn = document.getElementById('continue-game');
 
   //LightBox 
-  let succesLightBox = document.getElementById('sucess-continue');
-  let sucessEndLightBox = document.getElementById('sucess-end');
+  let succesLightBox = document.getElementById('success-continue');
+  let successEndLightBox = document.getElementById('success-end');
   let gameOverLightBox = document.getElementById('game-over');
   
   //Slider load
@@ -152,7 +152,7 @@ window.onload = function() {
         }
 
         if(level == clients.length-1){
-          sucessEndLightBox.classList.add('active')
+          successEndLightBox.classList.add('active')
         }
 
       }
