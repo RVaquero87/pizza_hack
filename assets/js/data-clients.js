@@ -4,9 +4,9 @@ let clients = [
     srcClient: 'assets/img/cliente/cliente-tortuga.png',
     namePizza: 'Pepperoni',
     time: 100,
-    ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni'],
+    ingredients: ['sal', 'aceite', 'tomate-frito', 'mozarella', 'pepperoni', 'queso'],
     clues: {
-      easyClues: ['El Pepperoni me vuelve loco', 'El tomate frito o la salsa de tomate nunca debe faltar'],
+      easyClues: ['El Pepperoni me vuelve loco', 'El tomate frito o la salsa de tomate nunca debe faltar', 'Con mucho queso en la base'],
       hardClues: ['Pizza de origen Napolitano', 'Siempre nos veías comiendo esta pizza', 'Nos encanta a las Tortugas Ninja', 'Sal y ninguna especia más'],
     },
     success:'¡Cowabunga! Está es la pizza que amo',
