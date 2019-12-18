@@ -44,9 +44,18 @@ window.onload = function() {
   }
 
   //Load Songs & add DOM
-  window.songStart = new Audio()
+  window.songStart = new Audio();
   window.songStart.src = 'assets/song/start.mp3';
-  document.body.append(window.songStart)
+  window.songSuccess = new Audio();
+  window.songSuccess.src = 'assets/song/success.mp3';
+  window.songSuccessEnd = new Audio();
+  window.songSuccessEnd.src = 'assets/song/success-end.mp3';
+  window.songGameOver = new Audio();
+  window.songGameOver.src = 'assets/song/game-over.mp3';
+  document.body.append(window.songStart);
+  document.body.append(window.songSuccess);
+  document.body.append(window.songSuccessEnd);
+  document.body.append(window.songGameOver);
   for(let i = 0; i < clients.length; i++){
     window['gameSong-' + [i]] = new Audio()
     window['gameSong-' + [i]].src = clients[i].songSRC;
@@ -101,9 +110,7 @@ window.onload = function() {
     instructionsLightBox.classList.remove('active');
 
     //Sound
-    for(let i = 0; i < allSongs.length; i++){
-      allSongs[i].pause();
-    }
+    stopSong()
     for(let i = 0; i <= level; i++){
       if(i === level) levelSongs[i].play();
     }
@@ -169,9 +176,19 @@ window.onload = function() {
         if(level == clients.length-1){
           successEndClient.innerText = successMessage;
           successEndLightBox.classList.add('active')
+        
+          //Sound
+          stopSong()
+          window.songSuccessEnd.play();
+        
         } else {
           succesClient.innerText = successMessage;
           succesLightBox.classList.add('active')
+        
+          //Sound
+          stopSong()
+          window.songSuccess.play();
+        
         }
         
         continueBtn.onclick = function(){
@@ -211,6 +228,13 @@ window.onload = function() {
   function printLevel(){
     levelActually.innerText = new String(level + 1)
     levelTotal.innerText = new String(clients.length)
+  }
+
+  function stopSong(){
+    for(let i = 0; i < allSongs.length; i++){
+      allSongs[i].pause();
+      allSongs[i].currentTime = 0;
+    }
   }
 
 }
