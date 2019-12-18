@@ -671,6 +671,7 @@ b{
   margin: 12px 0 25px;
   position: relative;
   text-align: center;
+  user-select: none;
 }
 /* end MESSAGE SUCCESS */
 
@@ -715,6 +716,7 @@ b{
   margin: 12px 0 25px;
   position: relative;
   text-align: center;
+  user-select: none;
 }
 /* end MESSAGE SUCCESS END */
 
@@ -758,6 +760,7 @@ b{
   line-height: 1.2;
   margin: 12px 0 25px;
   text-align: center;
+  user-select: none;
 }
 /* end MESSAGE GAME OVER */
 
