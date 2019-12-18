@@ -210,6 +210,11 @@ window.onload = function() {
         clearInterval(gamelevel.intervalId);
         gameOverClient.innerText = gameOverMessage
         gameOverLightBox.classList.add('active')
+
+        //Sound
+        stopSong()
+        window.songGameOver.play();
+
       }
     },1000)
 
