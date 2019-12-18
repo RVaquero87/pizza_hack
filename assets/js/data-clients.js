@@ -37,8 +37,8 @@ let clients = [
       easyClues: ['Lleva tomate en sus distintas formas', 'Sus ingredientes representan los colores de la bandera italiana', 'Margherita es su nombre', 'Sin especias no me convences', 'No te la pediría nunca un vámpiro'],
       hardClues: ['Es la pizza de las reinas', 'Surgio en 1889 en el Palacio de Capodimonte', 'La favorita de los niños', 'Se llama así por la reina Margherita di Savoia'],
     },
-    success:'¡Perfecta! Seguro que mi amor Luigi la comparte conmigo',
-    gameOver:'¿Eres Bowser? ¡Parece que me quieres envenenar!',
+    success:'¡Perfecta! Seguro que mi amor Donald la comparte conmigo',
+    gameOver:'¿Crees que me voy a comer esto? La respuesta es ¡NO!',
     songSRC: 'assets/song/funiculi.mp3',
   },
   {

@@ -659,6 +659,7 @@ b{
 .success-message-inner .box-img{
   margin: 0 auto;
   max-width: 465px;
+  user-select: none;
 }
 .success-message .img-success img{
   position: relative;
@@ -706,6 +707,7 @@ b{
 .success-end-message .box-img{
   margin: 0 auto;
   max-width: 465px;
+  user-select: none;
 }
 .success-end-message .img-success-end img{
   position: relative;
@@ -753,6 +755,7 @@ b{
 .game-over-message .img-game-over{
   margin: 0 auto;
   max-width: 400px;
+  user-select: none;
 }
 .game-over-message p {
   color: #e6242c;
