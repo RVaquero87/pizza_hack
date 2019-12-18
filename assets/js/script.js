@@ -27,7 +27,9 @@ window.onload = function() {
   let succesClient = document.getElementById('success-client');
   let successEndLightBox = document.getElementById('success-end');
   let successEndClient = document.getElementById('success-client-end');
+  let imgSuccessClient = document.querySelectorAll('.img-success-inner');
   let gameOverLightBox = document.getElementById('game-over');
+  let imgGameOverClient = document.getElementById('img-game-over-inner');
   let gameOverClient = document.getElementById('game-over-client');
   
   //Slider load
@@ -152,6 +154,8 @@ window.onload = function() {
     let clues = clients[level].clues;   
     let successMessage = clients[level].success;
     let gameOverMessage = clients[level].gameOver;
+    let successSrcImg = clients[level].srcSucess;
+    let gameOverSrcImg = clients[level].srcGameOver;
     
     // Chanfe img Client
     for(let i = 0; i < imgClient.length; i++){
@@ -159,6 +163,18 @@ window.onload = function() {
       imgClient[i].setAttribute('title', nameClient)
       imgClient[i].setAttribute('alt', nameClient)
     }
+
+    // Chanfe img success and gameOver
+    for(let i = 0; i < imgSuccessClient.length; i++){
+      imgSuccessClient[i].setAttribute('src', successSrcImg)
+      imgSuccessClient[i].setAttribute('title', nameClient)
+      imgSuccessClient[i].setAttribute('alt', nameClient)
+    }
+    imgGameOverClient.setAttribute('src', gameOverSrcImg)
+    imgGameOverClient.setAttribute('title', nameClient)
+    imgGameOverClient.setAttribute('alt', nameClient)
+    
+    
 
     //Build Game
     let gamelevel = new game(ingredientsPizza, time, clues);

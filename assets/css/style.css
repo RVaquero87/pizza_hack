@@ -658,12 +658,8 @@ b{
 }
 .success-message-inner .box-img{
   margin: 0 auto;
-  max-width: 465px;
+  max-width: 400px;
   user-select: none;
-}
-.success-message .img-success img{
-  position: relative;
-  left:50px;
 }
 .success-message p {
   color: #1faf17;
@@ -672,9 +668,9 @@ b{
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.2;
+  margin: 12px 0 25px;
   position: relative;
   text-align: center;
-  top: -25px;
 }
 /* end MESSAGE SUCCESS */
 
@@ -706,12 +702,8 @@ b{
 }
 .success-end-message .box-img{
   margin: 0 auto;
-  max-width: 465px;
+  max-width: 400px;
   user-select: none;
-}
-.success-end-message .img-success-end img{
-  position: relative;
-  left:50px;
 }
 .success-end-message p {
   color: #1faf17;
@@ -720,7 +712,7 @@ b{
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.2;
-  margin: 15px 0 30px;
+  margin: 12px 0 25px;
   position: relative;
   text-align: center;
 }
@@ -764,14 +756,8 @@ b{
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 1.2;
-  margin: 15px 0 30px;
-  position: relative;
+  margin: 12px 0 25px;
   text-align: center;
-  top: 7px;
-}
-.game-over-message a{
- position: relative;
- top: 10px;
 }
 /* end MESSAGE GAME OVER */
 

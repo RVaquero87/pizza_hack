@@ -12,6 +12,9 @@ let clients = [
     success:'¡Cowabunga! Está es la pizza que amo',
     gameOver:'¡Vaya Pizza! No se la deseo ni a mis peores enemigos',
     songSRC: 'assets/song/tarantella.mp3',
+    srcSucess: 'assets/img/success/success-tortuga.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-tortuga.jpg',
+    
   },
   {
     nameClient: 'Moana',
@@ -26,6 +29,8 @@ let clients = [
     success:'¡Por está Pizza me iría más alla del arrecife!',
     gameOver:'Yo soy Moana de Motunui, ¡y está no es mi Pizza!',
     songSRC: 'assets/song/mezzo-mare.mp3',
+    srcSucess: 'assets/img/success/success-moana.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-moana.jpg',
   },
   {
     nameClient: 'Daisy',
@@ -40,6 +45,8 @@ let clients = [
     success:'¡Perfecta! Seguro que mi amor Donald la comparte conmigo',
     gameOver:'¿Crees que me voy a comer esto? La respuesta es ¡NO!',
     songSRC: 'assets/song/funiculi.mp3',
+    srcSucess: 'assets/img/success/success-daisy.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-daisy.jpg',
   },
   {
     nameClient: 'Mario Bros',
@@ -54,20 +61,8 @@ let clients = [
     success:'¡Mamma Mia! ¡Así, cómo la hacía la mia Mamma!',
     gameOver:'¡Puagh! Bueno... lo que no te mata, te hace más pequeño',
     songSRC: 'assets/song/tarantella.mp3',
-  },
-  {
-    nameClient: 'Speedy Gonzales',
-    srcClient: 'assets/img/cliente/cliente-gonzalez.png',
-    namePizza: 'Diavola',
-    time: 80,
-    ingredients: ['sal', 'aceite', 'mozarella', 'salami', 'tomate-frito', 'tomate', 'albahaca', 'oregano'],
-    clues: {
-      easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
-      hardClues: ['No es apta para todo el mundo', 'Nos gusta a los Méxicanos', 'El picante es su toque especial', 'Diavola es su nombre'],
-    },
-    success:'!Padrísimo¡ La Pizza que preparaste está chingona',
-    gameOver:'¡Ándale! ¡ándale! ¡Se te quemó el horno güey!',
-    songSRC: 'assets/song/mezzo-mare.mp3',
+    srcSucess: 'assets/img/success/success-mario.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-mario.jpg',
   },
   {
     nameClient: 'Heidi',
@@ -80,8 +75,26 @@ let clients = [
       hardClues: ['Muy tradicional', 'Evoca los colores primaverales', 'Verano, Otoño, Invierno y...', 'La sal y el aceite no debe faltar', 'Sin duda, una pizca de oregano'],
     },
     success:'¡Mmmm! ¡Que rica! La compartiré con Clara y Pedro',
-    gameOver:'¡Oh vaya! Está no es mi Pizza. ¡Sé la daré a Niebla!',
+    gameOver:'¡Oh vaya! ¡Está no es mi Pizza! Sé la daré a Niebla',
     songSRC: 'assets/song/funiculi.mp3',
+    srcSucess: 'assets/img/success/success-heidi.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-heidi.jpg',
+  },
+  {
+    nameClient: 'Speedy Gonzales',
+    srcClient: 'assets/img/cliente/cliente-gonzalez.png',
+    namePizza: 'Diavola',
+    time: 80,
+    ingredients: ['sal', 'aceite', 'mozarella', 'salami', 'tomate-frito', 'tomate', 'albahaca', 'oregano'],
+    clues: {
+      easyClues: ['A veces se usa Chorizo en vez de otro ingrediente pero muy picante', 'No te olvides del sazón', 'Tomate en sus distintas formas'],
+      hardClues: ['No es apta para todo el mundo', 'Nos gusta a los Méxicanos', 'El picante es su toque especial', 'Diavola es su nombre'],
+    },
+    success:'¡Padrísimo! La Pizza que preparaste está chingona',
+    gameOver:'¡Ándale! ¡ándale! ¡Se te quemó el horno güey!',
+    songSRC: 'assets/song/mezzo-mare.mp3',
+    srcSucess: 'assets/img/success/success-gonzalez.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-gonzalez.jpg',
   },
   {
     nameClient: 'Vivaldi',
@@ -96,6 +109,8 @@ let clients = [
     success:'¡Perfecto, esto es una Pizza 4 Estaciones a mi altura!',
     gameOver:'¡Esta pizza desentona! Me voy con la música a otra parte',
     songSRC: 'assets/song/tarantella.mp3',
+    srcSucess: 'assets/img/success/success-vivaldi.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-vivaldi.jpg',
   },
   {
     nameClient: 'Paris Hilton',
@@ -110,5 +125,7 @@ let clients = [
     success:'¡Perfecta! Tan perfecta como yo',
     gameOver:'No mereces un minuto más de mi tiempo ¡Adiós!',
     songSRC: 'assets/song/mezzo-mare.mp3',
+    srcSucess: 'assets/img/success/success-hilton.jpg',
+    srcGameOver: 'assets/img/game-over/game-over-hilton.jpg',
   },
 ]
