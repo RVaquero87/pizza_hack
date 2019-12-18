@@ -43,11 +43,26 @@ window.onload = function() {
     }
   }
 
+  //Load Songs & add DOM
+  window.songStart = new Audio()
+  window.songStart.src = 'assets/song/start.mp3';
+  document.body.append(window.songStart)
+  for(let i = 0; i < clients.length; i++){
+    window['gameSong-' + [i]] = new Audio()
+    window['gameSong-' + [i]].src = clients[i].songSRC;
+    window['gameSong-' + [i]].classList = 'soundLevel';
+    window['gameSong-' + [i]].setAttribute('loop', '');
+    document.body.append(window['gameSong-' + [i]])
+  }
+  let allSongs = document.querySelectorAll('audio')
+  let levelSongs = document.querySelectorAll('audio.soundLevel')
+
   //Btn Start First Screen
   startOneBtn.onclick = function(e){
     starScreen.classList.remove('active');
     gameScreen.classList.add('active');
     instructionsLightBox.classList.add('active');
+    window.songStart.play();
     printLevel();
   }
   
@@ -84,6 +99,14 @@ window.onload = function() {
   //Start Game
   startGameBtn.onclick = function startGame(){
     instructionsLightBox.classList.remove('active');
+
+    //Sound
+    for(let i = 0; i < allSongs.length; i++){
+      allSongs[i].pause();
+    }
+    for(let i = 0; i <= level; i++){
+      if(i === level) levelSongs[i].play();
+    }
 
     //Print Level
     printLevel();

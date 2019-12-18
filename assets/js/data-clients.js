@@ -11,6 +11,7 @@ let clients = [
     },
     success:'¡Cowabunga! Está es la pizza que amo',
     gameOver:'¡Vaya Pizza! No se la deseo ni a mis peores enemigos',
+    songSRC: 'assets/song/game-01.mp3',
   },
   {
     nameClient: 'Moana',
@@ -24,6 +25,7 @@ let clients = [
     },
     success:'¡Por está Pizza me iría más alla del arrecife!',
     gameOver:'Yo soy Moana de Motunui, ¡y está no es mi Pizza!',
+    songSRC: 'assets/song/game-02.mp3',
   },
   {
     nameClient: 'Daisy',
@@ -37,6 +39,7 @@ let clients = [
     },
     success:'¡Perfecta! Seguro que mi amor Luigi la comparte conmigo',
     gameOver:'¿Eres Bowser? ¡Parece que me quieres envenenar!',
+    songSRC: 'assets/song/game-03.mp3',
   },
   {
     nameClient: 'Mario Bros',
@@ -50,6 +53,7 @@ let clients = [
     },
     success:'¡Mamma Mia! ¡Así, cómo la hacía la mia Mamma!',
     gameOver:'¡Puagh! Bueno... lo que no te mata, te hace más pequeño',
+    songSRC: 'assets/song/game-04.mp3',
   },
   {
     nameClient: 'Speedy Gonzales',
@@ -63,6 +67,7 @@ let clients = [
     },
     success:'!Padrísimo¡ La Pizza que preparaste está chingona',
     gameOver:'¡Ándale! ¡ándale! ¡Se te quemó el horno güey!',
+    songSRC: 'assets/song/game-05.mp3',
   },
   {
     nameClient: 'Heidi',
@@ -76,6 +81,7 @@ let clients = [
     },
     success:'¡Mmmm! ¡Que rica! La compartiré con Clara y Pedro',
     gameOver:'¡Oh vaya! Está no es mi Pizza. ¡Sé la daré a Niebla!',
+    songSRC: 'assets/song/game-06.mp3',
   },
   {
     nameClient: 'Vivaldi',
@@ -89,6 +95,7 @@ let clients = [
     },
     success:'¡Perfecto, esto es una Pizza 4 Estaciones a mi altura!',
     gameOver:'¡Esta pizza desentona! Me voy con la música a otra parte',
+    songSRC: 'assets/song/game-07.mp3',
   },
   {
     nameClient: 'Paris Hilton',
@@ -102,5 +109,6 @@ let clients = [
     },
     success:'¡Perfecta! Tan perfecta como yo',
     gameOver:'No mereces un minuto más de mi tiempo ¡Adiós!',
+    songSRC: 'assets/song/game-08.mp3',
   },
 ]
