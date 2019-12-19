@@ -1241,6 +1241,31 @@ b{
 }
 
 @media only screen and (max-height: 550px) {
+  
+  /* COMMON */
+  .container{
+    min-height: 500px
+  }
+  /* end COMMON */
+
+  /* HOME SCREEN */
+  .start-box-inner {
+    min-height: 500px;
+  }
+  /* end HOME SCREEN */
+
+  /* GAME SCREEN */
+  .game-box-inner {
+    min-height: 500px;
+  }
+  .gaming-box-inner .gaming-box-pizza {
+    top: -9.1vh;
+  }
+  /* end GAME SCREEN */
+  
+}
+
+@media only screen and (max-height: 499px) {
 
   /* MESSAGE MOBILE */
   .container.start-box, 
