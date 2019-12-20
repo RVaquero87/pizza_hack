@@ -51,7 +51,7 @@ Existen muchas **líneas de mejora**, algunas de ellas son:
 - **Niveles desbloqueables:** Hacer que se pueda ir a un nivel directamente, desbloqueándoles. Sin necesidad de empezar siempre desde el principio.
 - **Eliminar pistas:** Eliminar las pistas de ingredientes que ya estén ok.
 - **Pista especial:** Botón para pedir o solicitar una pista. Esa pista sería especial por el nivel de la ayuda que te proporcionará. Sólo se podrá solicitar un vez por partida.
-- **Repsonsive:** Faltaría finalizarlo, haciendo el mobile.
+- **Responsive:** Faltaría finalizarlo, haciendo el mobile.
 
 ### Código de conducta 
 ---
